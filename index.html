@@ -1,0 +1,1987 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aiuni Juega</title>
+<meta name="description" content="Plan semanal de juegos de estimulación para Aiuni, con dibujos, beneficios y pasos.">
+<link rel="preconnect" href="https://hdxxjjnogtorlbnobcxz.supabase.co">
+<meta name="theme-color" content="#fff5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#22161d" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Aiuni Juega">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grandstander:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap">
+<style>
+/* Layout: libreta rosada — una columna de hasta 560px, encabezado con su nombre arriba, pestañas de app abajo y fichas tipo stickers */
+:root {
+  --bg: #fff5f7;
+  --paper: #ffffff;
+  --blush: #fde6ec;
+  --line: #f3d3dd;
+  --ink: #4b2a39;
+  --ink-soft: #7f5868;
+  --accent: #bf4d76;
+  --accent-ink: #ffffff;
+  --accent-soft: #fbd3df;
+  --ok: #bfe8d1;
+  --ok-ink: #1f4a34;
+  --warn-bg: #fdf1cf;
+  --scrim: rgba(75, 42, 57, .38);
+  --shadow: 0 12px 28px -20px rgba(122, 70, 89, .6);
+
+  /* fondo de cada dibujo (siempre pastel, como sticker) */
+  --t-gruesa: #fbd0dc; --t-fina: #fde0cc; --t-lenguaje: #e7ddf8;
+  --t-cognitivo: #d7e9f8; --t-sensorial: #d4efe0; --t-socio: #fad7ec;
+  /* fondo de etiquetas */
+  --c-gruesa: #fbd0dc; --c-fina: #fde0cc; --c-lenguaje: #e7ddf8;
+  --c-cognitivo: #d7e9f8; --c-sensorial: #d4efe0; --c-socio: #fad7ec;
+  /* punto de color por área */
+  --d-gruesa: #e98aa7; --d-fina: #ee9c6e; --d-lenguaje: #a387da;
+  --d-cognitivo: #72aadb; --d-sensorial: #62bb8c; --d-socio: #d87cb6;
+
+  /* tinta y rellenos de las ilustraciones */
+  --il-line: #7a4659; --il-pink: #f8c8d6; --il-rose: #ef9db5; --il-peach: #fbd2b6;
+  --il-cream: #fff7f1; --il-lilac: #d9c9f3; --il-sky: #c3e0f6; --il-mint: #c2e9d3;
+  --il-butter: #fbe7a1; --il-card: #e8c8a9;
+
+  --f-display: "Grandstander", ui-rounded, "Nunito", system-ui, sans-serif;
+  --f-body: "Nunito", ui-rounded, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #22161d; --paper: #2e1f28; --blush: #3b2631; --line: #4c303e;
+    --ink: #fbe9f0; --ink-soft: #d4adbd; --accent: #f3a6c0; --accent-ink: #2a1520; --accent-soft: #5a3249;
+    --ok: #2d4b3d; --ok-ink: #cdf2dd; --warn-bg: #46391f;
+    --scrim: rgba(0, 0, 0, .58); --shadow: 0 12px 28px -20px rgba(0, 0, 0, .9);
+    --t-gruesa: #edbccb; --t-fina: #efcfba; --t-lenguaje: #d6cbec;
+    --t-cognitivo: #c3d9ec; --t-sensorial: #c1e0cf; --t-socio: #ebc4dc;
+    --c-gruesa: #5a3243; --c-fina: #563a2e; --c-lenguaje: #41365c;
+    --c-cognitivo: #2c4257; --c-sensorial: #2c4a3d; --c-socio: #53304e;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #22161d; --paper: #2e1f28; --blush: #3b2631; --line: #4c303e;
+  --ink: #fbe9f0; --ink-soft: #d4adbd; --accent: #f3a6c0; --accent-ink: #2a1520; --accent-soft: #5a3249;
+  --ok: #2d4b3d; --ok-ink: #cdf2dd; --warn-bg: #46391f;
+  --scrim: rgba(0, 0, 0, .58); --shadow: 0 12px 28px -20px rgba(0, 0, 0, .9);
+  --t-gruesa: #edbccb; --t-fina: #efcfba; --t-lenguaje: #d6cbec;
+  --t-cognitivo: #c3d9ec; --t-sensorial: #c1e0cf; --t-socio: #ebc4dc;
+  --c-gruesa: #5a3243; --c-fina: #563a2e; --c-lenguaje: #41365c;
+  --c-cognitivo: #2c4257; --c-sensorial: #2c4a3d; --c-socio: #53304e;
+  color-scheme: dark;
+}
+
+[data-area="gruesa"]    { --tile: var(--t-gruesa);    --chip: var(--c-gruesa);    --dot: var(--d-gruesa); }
+[data-area="fina"]      { --tile: var(--t-fina);      --chip: var(--c-fina);      --dot: var(--d-fina); }
+[data-area="lenguaje"]  { --tile: var(--t-lenguaje);  --chip: var(--c-lenguaje);  --dot: var(--d-lenguaje); }
+[data-area="cognitivo"] { --tile: var(--t-cognitivo); --chip: var(--c-cognitivo); --dot: var(--d-cognitivo); }
+[data-area="sensorial"] { --tile: var(--t-sensorial); --chip: var(--c-sensorial); --dot: var(--d-sensorial); }
+[data-area="socio"]     { --tile: var(--t-socio);     --chip: var(--c-socio);     --dot: var(--d-socio); }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: var(--f-body); font-size: 16px; line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+}
+body.locked { overflow: hidden; }
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 30; background: var(--bg);
+}
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+svg { display: block; }
+
+.wrap {
+  max-width: 560px; margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+/* ---------- encabezado y pestañas ---------- */
+.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  background: var(--bg); border-bottom: 1px solid var(--line);
+}
+.top .wrap { display: flex; align-items: center; gap: 10px; padding-block: 10px; }
+.brand {
+  display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink);
+  font-family: var(--f-display); font-weight: 700; font-size: 1.375rem; letter-spacing: -.01em;
+}
+.brand svg { width: 38px; height: 38px; }
+.age {
+  margin-left: auto; font-size: .8125rem; font-weight: 800; white-space: nowrap;
+  background: var(--accent-soft); color: var(--ink); padding: 4px 12px; border-radius: 999px;
+}
+main.wrap { padding-block: 4px calc(104px + env(safe-area-inset-bottom, 0px)); outline: none; }
+
+.tabs {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+  background: var(--paper); border-top: 1px solid var(--line);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.tabs .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; padding-block: 8px; }
+.tab {
+  display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 6px 4px;
+  border-radius: 16px; color: var(--ink-soft); text-decoration: none; font-weight: 800; font-size: .75rem;
+}
+.tab svg { width: 26px; height: 26px; }
+.tab[aria-current="page"] { background: var(--accent-soft); color: var(--ink); }
+
+/* ---------- textos ---------- */
+.eyebrow {
+  margin: 0; font-size: .75rem; font-weight: 800; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--ink-soft);
+}
+.title {
+  font-family: var(--f-display); font-weight: 700; font-size: clamp(1.75rem, 7vw, 2.125rem);
+  line-height: 1.1; margin: .2em 0 .25em; text-wrap: balance;
+}
+.sub { margin: 0; color: var(--ink-soft); }
+.hero { padding-block: 18px 6px; }
+
+/* ---------- piezas comunes ---------- */
+.tile {
+  display: block; position: relative; width: 100%; aspect-ratio: 4 / 3; max-width: 100%;
+  border: 0; padding: 0; border-radius: 16px; background: var(--tile, var(--blush)); overflow: hidden;
+}
+button.tile { cursor: pointer; }
+.art { width: 100%; height: 100%; }
+.badge {
+  position: absolute; top: 6px; right: 6px; width: 24px; height: 24px; border-radius: 50%;
+  background: var(--ok); color: var(--ok-ink); display: grid; place-items: center;
+  box-shadow: 0 0 0 2px var(--paper);
+}
+.badge svg { width: 15px; height: 15px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
+  background: var(--chip, var(--blush)); color: var(--ink); font-weight: 800; font-size: .75rem;
+  padding: 3px 10px; border-radius: 999px;
+}
+.chip::before, .dot { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--dot); flex: none; }
+.chip b { font-variant-numeric: tabular-nums; }
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 0; font-size: .8125rem; color: var(--ink-soft); }
+.tag {
+  font-size: .6875rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
+  background: var(--accent); color: var(--accent-ink); padding: 2px 8px; border-radius: 999px;
+}
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 42px; padding: 9px 16px;
+  border-radius: 999px; border: 1.5px solid var(--line); background: var(--paper); color: var(--ink);
+  font-weight: 800; font-size: .875rem; cursor: pointer; transition: background .15s, transform .1s;
+}
+.btn:active { transform: scale(.97); }
+.btn svg { width: 18px; height: 18px; flex: none; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn.check[aria-pressed="true"] { background: var(--ok); border-color: var(--ok); color: var(--ok-ink); }
+.btn.warn { background: var(--warn-bg); border-color: var(--warn-bg); }
+
+/* ---------- Hoy ---------- */
+.bar { height: 12px; border-radius: 999px; background: var(--blush); overflow: hidden; margin-top: 14px; }
+.bar span { display: block; height: 100%; min-width: 12px; background: var(--accent); border-radius: inherit; transition: width .4s ease; }
+.bar span[data-zero] { min-width: 0; }
+.list { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 12px; }
+.slot-card {
+  display: grid; grid-template-columns: minmax(96px, 34%) minmax(0, 1fr); gap: 14px; align-items: start;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 22px; padding: 12px; box-shadow: var(--shadow);
+}
+.slot-card .tile { aspect-ratio: 1; }
+.slot-card h3 { font-family: var(--f-display); font-weight: 700; font-size: 1.1875rem; line-height: 1.2; margin: 4px 0 6px; text-wrap: balance; }
+.slot-card.is-done h3 { color: var(--ink-soft); }
+.tile-empty { background: transparent; border: 2px dashed var(--line); display: grid; place-items: center; color: var(--ink-soft); }
+.tile-empty svg { width: 34px; height: 34px; }
+.tip { margin-top: 22px; background: var(--blush); border-radius: 22px; padding: 16px 18px; }
+.tip h2 { display: flex; align-items: center; gap: 8px; margin: 0 0 4px; font-family: var(--f-display); font-size: 1.0625rem; }
+.tip h2 svg { width: 20px; height: 20px; color: var(--accent); }
+.tip p { margin: 0; max-width: 60ch; }
+
+/* ---------- Semana ---------- */
+.balance { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+.days { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 12px; }
+.day { background: var(--paper); border: 1px solid var(--line); border-radius: 22px; padding: 12px; scroll-margin-top: 80px; }
+.day.is-today { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.day-head { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.day-head h2 { font-family: var(--f-display); font-weight: 700; font-size: 1.125rem; margin: 0; }
+.day-head .date { color: var(--ink-soft); font-size: .8125rem; }
+.day-head .count { margin-left: auto; font-size: .8125rem; font-weight: 800; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.slots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.mini {
+  display: flex; flex-direction: column; gap: 3px; min-width: 0; padding: 0; border: 0; background: none;
+  text-align: left; cursor: pointer; border-radius: 14px;
+}
+.mini .tile { border-radius: 12px; }
+.mini-m { font-size: .6875rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); margin-top: 2px; }
+.mini-n {
+  font-size: .8125rem; font-weight: 700; line-height: 1.25; overflow: hidden;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+}
+.mini.empty .tile { background: transparent; border: 2px dashed var(--line); display: grid; place-items: center; color: var(--ink-soft); }
+.mini.empty .tile svg { width: 26px; height: 26px; }
+.mini.empty .mini-n { color: var(--ink-soft); }
+.week-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+
+/* ---------- Juegos ---------- */
+.filters {
+  display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 10px; margin: 14px -2px 0;
+  scrollbar-width: none; -webkit-overflow-scrolling: touch;
+}
+.filters::-webkit-scrollbar { display: none; }
+.fchip {
+  flex: none; display: inline-flex; align-items: center; gap: 6px; min-height: 38px;
+  padding: 7px 14px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--paper);
+  font-weight: 800; font-size: .8125rem; cursor: pointer;
+}
+.fchip[data-area]::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--dot); }
+.fchip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.grid { list-style: none; padding: 0; margin: 6px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.card {
+  display: flex; flex-direction: column; gap: 6px; width: 100%; height: 100%; text-align: left;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 20px; padding: 8px 8px 12px; cursor: pointer;
+}
+.card .tile { border-radius: 14px; }
+.card-n { font-family: var(--f-display); font-weight: 700; font-size: 1rem; line-height: 1.2; padding-inline: 4px; text-wrap: balance; }
+.card-meta { display: flex; align-items: center; gap: 6px; font-size: .75rem; color: var(--ink-soft); padding-inline: 4px; }
+
+/* ---------- Hoja inferior ---------- */
+.scrim { position: fixed; inset: 0; z-index: 40; background: var(--scrim); }
+.sheet {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; margin-inline: auto; max-width: 560px;
+  max-height: 92dvh; overflow-y: auto; overscroll-behavior: contain;
+  background: var(--paper); border-radius: 26px 26px 0 0; box-shadow: 0 -16px 40px -24px rgba(0, 0, 0, .45);
+  padding-top: 6px; padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  animation: up .24s ease-out;
+}
+@keyframes up { from { transform: translateY(28px); opacity: .5; } }
+.grab { width: 44px; height: 5px; border-radius: 9px; background: var(--line); margin: 4px auto 6px; }
+.sheet-head { display: flex; align-items: center; gap: 8px; min-height: 44px; }
+.x {
+  margin-left: auto; width: 42px; height: 42px; border-radius: 50%; border: 0; background: var(--blush);
+  display: grid; place-items: center; cursor: pointer; flex: none;
+}
+.x svg { width: 20px; height: 20px; }
+.hero-art { border-radius: 22px; margin: 6px 0 14px; }
+.sheet h2 { font-family: var(--f-display); font-weight: 700; font-size: 1.625rem; line-height: 1.15; margin: 0 0 8px; text-wrap: balance; }
+.sec { margin-top: 22px; }
+.sec h3 { margin: 0 0 10px; font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+.benefits { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+.benefits li { display: flex; gap: 10px; align-items: flex-start; background: var(--blush); border-radius: 14px; padding: 9px 12px; font-weight: 700; }
+.benefits svg { width: 18px; height: 18px; color: var(--accent); flex: none; margin-top: 3px; }
+.materials { margin: 0; padding-left: 1.25em; display: grid; gap: 4px; }
+.materials li::marker { color: var(--accent); }
+.steps { list-style: none; counter-reset: paso; padding: 0; margin: 0; display: grid; gap: 12px; }
+.steps li { counter-increment: paso; display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 12px; align-items: start; }
+.steps li::before {
+  content: counter(paso); width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--accent-soft); color: var(--ink); font-family: var(--f-display); font-weight: 700;
+}
+.steps span { padding-top: 4px; }
+.note { margin: 22px 0 0; border-radius: 16px; padding: 12px 14px; background: var(--blush); }
+.note.care { background: var(--warn-bg); }
+
+.adder { margin-top: 14px; padding: 14px; border-radius: 18px; background: var(--blush); display: grid; gap: 12px; }
+.adder fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.adder legend { padding: 0; margin-bottom: 8px; font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+.opts { display: flex; flex-wrap: wrap; gap: 6px; }
+.opt { position: relative; }
+.opt input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.opt span {
+  display: inline-flex; align-items: center; min-height: 38px; padding: 6px 13px; border-radius: 999px;
+  background: var(--paper); border: 1.5px solid var(--line); font-weight: 800; font-size: .8125rem;
+}
+.opt input:checked + span { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.opt input:focus-visible + span { outline: 3px solid var(--accent); outline-offset: 2px; }
+.hint { margin: 0; font-size: .8125rem; color: var(--ink-soft); }
+
+.pick { list-style: none; padding: 0; margin: 4px 0 0; display: grid; gap: 8px; }
+.pick button {
+  display: grid; grid-template-columns: 72px minmax(0, 1fr) auto; align-items: center; gap: 12px; width: 100%;
+  text-align: left; background: var(--paper); border: 1.5px solid var(--line); border-radius: 18px; padding: 6px 12px 6px 6px; cursor: pointer;
+}
+.pick button[aria-current="true"] { border-color: var(--accent); }
+.pick .tile { border-radius: 12px; }
+.pick-n { display: block; font-weight: 800; line-height: 1.25; }
+.pick-a { display: block; font-size: .75rem; color: var(--ink-soft); }
+
+.toast {
+  position: fixed; left: 50%; bottom: calc(92px + env(safe-area-inset-bottom, 0px)); z-index: 60;
+  transform: translate(-50%, 8px); max-width: calc(100% - 32px); width: max-content;
+  background: var(--ink); color: var(--bg); padding: 10px 18px; border-radius: 999px;
+  font-weight: 800; font-size: .875rem; text-align: center;
+  opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s;
+}
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+/* ---------- trazos de los dibujos ---------- */
+.l { stroke: var(--il-line); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.n { fill: none; }
+.c-pk { fill: var(--il-pink); } .c-rs { fill: var(--il-rose); } .c-pc { fill: var(--il-peach); }
+.c-cr { fill: var(--il-cream); } .c-li { fill: var(--il-lilac); } .c-sk { fill: var(--il-sky); }
+.c-mn { fill: var(--il-mint); } .c-bt { fill: var(--il-butter); } .c-br { fill: var(--il-card); }
+.c-ln { fill: var(--il-line); }
+.sh { fill: var(--il-line); opacity: .12; }
+.th { fill: none; stroke: var(--il-line); stroke-width: 1.5; opacity: .55; stroke-linecap: round; }
+.tx { fill: none; stroke: var(--il-line); stroke-width: 3; opacity: .4; stroke-linecap: round; }
+.dash { stroke-dasharray: 2 7; }
+.sw { fill: none; stroke: var(--il-rose); stroke-width: 4; stroke-linecap: round; }
+.stw { fill: none; stroke: var(--il-sky); stroke-width: 6; stroke-linecap: round; }
+.sh2 { fill: none; stroke: var(--il-cream); stroke-width: 3; stroke-linecap: round; }
+.beam { stroke: var(--il-line); stroke-width: 6; stroke-linecap: round; }
+.fo { fill: none; stroke: var(--il-line); stroke-width: 10; stroke-linecap: round; }
+.fi { fill: none; stroke: var(--il-peach); stroke-width: 5; stroke-linecap: round; }
+.svt { font-family: var(--f-display); font-weight: 700; font-size: 15px; fill: var(--il-line); }
+.svt.big { font-size: 34px; }
+
+.swl { fill: none; stroke: var(--il-lilac); stroke-width: 4; stroke-linecap: round; }
+.swm { fill: none; stroke: var(--il-mint); stroke-width: 4; }
+
+/* ---------- v3: ajustes, día ocupado, resumen, materiales, diario ---------- */
+.icon-btn {
+  width: 40px; height: 40px; border-radius: 50%; border: 0; background: var(--blush); color: var(--ink);
+  display: grid; place-items: center; cursor: pointer; flex: none;
+}
+.icon-btn svg { width: 20px; height: 20px; }
+.gear { margin-left: 2px; }
+.link { display: inline-block; margin-top: 10px; color: var(--accent); font-weight: 800; text-decoration: none; }
+.link:hover { text-decoration: underline; }
+.section-h { display: flex; align-items: center; gap: 8px; font-family: var(--f-display); font-weight: 700; font-size: 1.125rem; margin: 22px 0 10px; }
+.section-h svg { width: 20px; height: 20px; color: var(--accent); }
+.panel { background: var(--paper); border: 1px solid var(--line); border-radius: 22px; padding: 4px 16px 16px; margin-top: 16px; }
+.panel > .section-h:first-child { margin-top: 14px; }
+.empty-msg { margin: 6px 0 0; color: var(--ink-soft); }
+.slot-card .tag { display: inline-block; margin-top: 4px; }
+.slot-card .tag + h3 { margin-top: 4px; }
+.fav {
+  position: absolute; bottom: 6px; left: 6px; width: 22px; height: 22px; border-radius: 50%;
+  background: var(--paper); color: var(--accent); display: grid; place-items: center;
+}
+.fav svg { width: 13px; height: 13px; }
+.tag.new { position: absolute; top: 6px; left: 6px; }
+.tag.busy { display: inline-flex; align-items: center; gap: 3px; background: var(--warn-bg); color: var(--ink); }
+.tag.busy svg { width: 11px; height: 11px; }
+
+.busy-toggle {
+  display: grid; grid-template-columns: 38px minmax(0, 1fr) 46px; align-items: center; gap: 12px;
+  width: 100%; margin-top: 14px; padding: 10px 14px 10px 10px; text-align: left; cursor: pointer;
+  background: var(--paper); border: 1.5px solid var(--line); border-radius: 18px;
+}
+.busy-toggle strong { display: block; font-weight: 800; }
+.busy-toggle small { display: block; color: var(--ink-soft); font-size: .8125rem; line-height: 1.3; }
+.busy-ic { width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; background: var(--warn-bg); }
+.busy-ic svg { width: 20px; height: 20px; color: var(--ink); }
+.switch { width: 46px; height: 28px; border-radius: 999px; background: var(--line); position: relative; transition: background .2s; }
+.switch::after { content: ""; position: absolute; top: 3px; left: 3px; width: 22px; height: 22px; border-radius: 50%; background: var(--paper); box-shadow: 0 1px 3px rgba(0,0,0,.2); transition: transform .2s; }
+.busy-toggle[aria-pressed="true"] { border-color: var(--accent); }
+.busy-toggle[aria-pressed="true"] .switch { background: var(--accent); }
+.busy-toggle[aria-pressed="true"] .switch::after { transform: translateX(18px); }
+
+.note-card { margin-top: 16px; background: var(--accent-soft); border-radius: 22px; padding: 14px 18px; }
+.note-card h2 { display: flex; align-items: center; gap: 8px; margin: 0 0 4px; font-family: var(--f-display); font-size: 1.0625rem; }
+.note-card h2 svg { width: 18px; height: 18px; color: var(--accent); }
+.note-card p { margin: 0; }
+
+.rate { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 12px; }
+.rate.compact { margin-top: 10px; }
+.rate-q { font-size: .8125rem; font-weight: 800; color: var(--ink-soft); width: 100%; }
+.rate-btn { min-height: 38px; padding: 7px 13px; font-size: .8125rem; }
+.rate-btn[data-v="1"] svg { color: var(--accent); }
+.rate-btn[data-v="1"][aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); }
+.rate-btn[data-v="-1"][aria-pressed="true"] { background: var(--blush); border-color: var(--ink-soft); }
+
+.seg { display: inline-grid; grid-auto-flow: column; gap: 4px; padding: 4px; margin: 6px 0 10px; background: var(--blush); border-radius: 999px; max-width: 100%; }
+.seg button { border: 0; background: transparent; padding: 8px 16px; border-radius: 999px; font-weight: 800; font-size: .875rem; cursor: pointer; color: var(--ink-soft); white-space: nowrap; }
+.seg button[aria-selected="true"] { background: var(--paper); color: var(--ink); box-shadow: 0 2px 6px -3px rgba(122, 70, 89, .5); }
+.seg.small button { padding: 6px 12px; font-size: .8125rem; }
+
+.resumen .res-top { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 10px; padding-top: 14px; }
+.resumen .big { margin: 2px 0 0; font-size: 1rem; color: var(--ink-soft); }
+.resumen .big strong { font-family: var(--f-display); font-size: 2rem; color: var(--ink); margin-right: 4px; font-variant-numeric: tabular-nums; }
+.resumen .btn b { font-variant-numeric: tabular-nums; }
+.area-bars { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 8px; }
+.area-bars li { display: grid; grid-template-columns: 78px minmax(0, 1fr) 40px; align-items: center; gap: 10px; font-size: .8125rem; font-weight: 800; }
+.ab-track { height: 12px; border-radius: 999px; background: var(--blush); overflow: hidden; }
+.ab-p { display: block; height: 100%; border-radius: inherit; background: var(--chip); min-width: 0; }
+.ab-d { display: block; height: 100%; border-radius: inherit; background: var(--dot); }
+.ab-v { text-align: right; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.new-note { display: flex; gap: 8px; align-items: center; margin: 14px 0 0; padding: 10px 12px; border-radius: 14px; background: var(--accent-soft); font-weight: 700; }
+.new-note svg { width: 18px; height: 18px; color: var(--accent); flex: none; }
+.day.is-off { background: transparent; border-style: dashed; }
+.day.is-off .day-head { margin-bottom: 4px; }
+.off { margin: 0; color: var(--ink-soft); font-size: .875rem; }
+
+.mats, .miles { list-style: none; padding: 0; margin: 6px 0 0; display: grid; gap: 6px; }
+.mat, .mile {
+  display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 12px; align-items: start; position: relative;
+  padding: 10px 12px; border-radius: 14px; background: var(--blush); cursor: pointer;
+}
+.mile { grid-template-columns: 26px minmax(0, 1fr) 8px; align-items: center; }
+.mat input, .mile input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.box { width: 26px; height: 26px; border-radius: 8px; border: 2px solid var(--line); background: var(--paper); display: grid; place-items: center; color: transparent; }
+.box svg { width: 17px; height: 17px; }
+.mat input:checked + .box, .mile input:checked + .box { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.mat input:focus-visible + .box, .mile input:focus-visible + .box { outline: 3px solid var(--accent); outline-offset: 2px; }
+.mat input:checked ~ span .mat-n { text-decoration: line-through; color: var(--ink-soft); }
+.mat-n { display: block; font-weight: 700; line-height: 1.35; }
+.mat-u { display: block; font-size: .75rem; color: var(--ink-soft); margin-top: 2px; }
+.mile-t { font-weight: 700; line-height: 1.35; }
+.mile-t small { display: block; font-weight: 700; font-size: .75rem; color: var(--accent); margin-top: 2px; }
+
+.field { display: grid; gap: 4px; min-width: 0; }
+.field > span { font-size: .75rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); }
+.field input, .field textarea {
+  font: inherit; color: var(--ink); background: var(--paper); border: 1.5px solid var(--line);
+  border-radius: 14px; padding: 10px 12px; min-height: 44px; width: 100%; resize: vertical;
+}
+.field input:focus, .field textarea:focus { outline: 3px solid var(--accent-soft); border-color: var(--accent); }
+.diary-form { display: grid; gap: 10px; }
+.diary-form .row { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 10px; }
+.diary-form .row .field { flex: 1 1 150px; }
+.entries { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 8px; }
+.entries li { display: grid; grid-template-columns: 56px minmax(0, 1fr) 40px; gap: 10px; align-items: center; padding: 8px 8px 8px 12px; border-radius: 14px; background: var(--blush); }
+.entries p { margin: 0; font-weight: 700; overflow-wrap: anywhere; }
+.e-date { font-size: .75rem; font-weight: 800; color: var(--accent); text-transform: uppercase; }
+.entries .icon-btn { background: var(--paper); width: 36px; height: 36px; }
+.weeks { list-style: none; padding: 0; margin: 4px 0 0; display: grid; gap: 10px; }
+.weeks li { display: grid; grid-template-columns: minmax(0, 1fr) 90px 44px; gap: 10px; align-items: center; font-weight: 700; font-size: .875rem; }
+.w-bar { height: 10px; border-radius: 999px; background: var(--blush); overflow: hidden; }
+.w-bar span { display: block; height: 100%; background: var(--accent); border-radius: inherit; }
+.w-v { text-align: right; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.card.is-later .tile { opacity: .6; }
+
+.sec h3:has(svg) { display: flex; align-items: center; gap: 6px; }
+.sec h3 svg { width: 15px; height: 15px; flex: none; }
+.code-box { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 10px; padding: 12px 14px; border-radius: 16px; background: var(--blush); }
+.code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-weight: 700; font-size: 1.25rem; letter-spacing: .06em; user-select: all; }
+.sync-line { margin: 10px 0 0; font-size: .875rem; color: var(--ink-soft); }
+.join { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 10px; margin-top: 14px; }
+.join .field { flex: 1 1 180px; }
+.join input { text-transform: uppercase; font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+.times { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-top: 10px; }
+.sec .actions + .hint, .times + .actions + .hint { margin-top: 8px; }
+
+@media (min-width: 600px) {
+  .slot-card { grid-template-columns: 150px minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#hoy">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <path class="fo" d="M24 24 33 33"/><path class="fi" d="M24 24 33 33" style="stroke:var(--il-butter)"/>
+        <circle class="l c-bt" cx="34" cy="34" r="3.6"/>
+        <circle class="l c-pk" cx="17" cy="17" r="12.5"/>
+        <path class="l n" d="M9.5 13.5q7.5-6 15 0"/>
+        <path class="c-rs" transform="translate(17 20) scale(.62)" d="M0 6C-8 0-7-7-2-6C-1-5.6 0-4.6 0-3.6C0-4.6 1-5.6 2-6C7-7 8 0 0 6Z"/>
+      </svg>
+      <span id="brand-name">Aiuni Juega</span>
+    </a>
+    <span class="age" id="age"></span>
+    <button class="icon-btn gear" data-act="settings" aria-label="Ajustes: compartir y recordatorios">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.5 5.5l1.7 1.7M16.8 16.8l1.7 1.7M18.5 5.5l-1.7 1.7M7.2 16.8l-1.7 1.7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="view" class="wrap" tabindex="-1"></main>
+
+<nav class="tabs" aria-label="Secciones">
+  <div class="wrap">
+    <a class="tab" href="#hoy" data-view="hoy">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span>Hoy</span>
+    </a>
+    <a class="tab" href="#semana" data-view="semana">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 10h17M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="8.5" cy="14.5" r="1.3" fill="currentColor"/><circle cx="12" cy="14.5" r="1.3" fill="currentColor"/><circle cx="15.5" cy="14.5" r="1.3" fill="currentColor"/></svg>
+      <span>Semana</span>
+    </a>
+    <a class="tab" href="#juegos" data-view="juegos">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="12" width="8" height="8.5" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="12.5" y="12" width="8" height="8.5" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="8" y="3.5" width="8" height="8.5" rx="2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      <span>Juegos</span>
+    </a>
+    <a class="tab" href="#diario" data-view="diario">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 4.5h11a2 2 0 0 1 2 2v13h-11a2 2 0 0 1-2-2v-13Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M5.5 17.5a2 2 0 0 1 2-2h11" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 12.4c-2.6-1.8-3.2-3.2-2.9-4.2.3-1 1.5-1.4 2.4-.7l.5.5.5-.5c.9-.7 2.1-.3 2.4.7.3 1-.3 2.4-2.9 4.2Z" fill="currentColor"/></svg>
+      <span>Diario</span>
+    </a>
+  </div>
+</nav>
+
+<div class="scrim" id="scrim" data-act="close" hidden></div>
+<section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden></section>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>window.AIUNI_CFG = {"build": "pwa", "sbUrl": "https://hdxxjjnogtorlbnobcxz.supabase.co", "sbKey": "sb_publishable_DSc_3qU_7m6-GNCFn3ekug_OftD1w_f"};</script>
+<script>
+/* Aiuni Juega · datos de los juegos e ilustraciones propias (SVG) */
+const BABY = { name: 'Aiuni', birth: '2025-10-03', start: '2026-11-01' };
+
+const AREAS = {
+  gruesa:    { short: 'Moverse',   full: 'Motricidad gruesa' },
+  fina:      { short: 'Manitos',   full: 'Motricidad fina' },
+  lenguaje:  { short: 'Palabras',  full: 'Lenguaje y comunicación' },
+  cognitivo: { short: 'Descubrir', full: 'Cognitivo' },
+  sensorial: { short: 'Sentidos',  full: 'Sensorial' },
+  socio:     { short: 'Cariño',    full: 'Socioemocional' }
+};
+
+/* Momentos según su rutina: energía al despertar, concentración tras la siesta, calma antes de dormir */
+const MOMENTS = [
+  { k: 'a', n: 'Al despertar',         s: 'Al despertar', d: 'Moverse y descubrir', areas: ['gruesa', 'cognitivo'] },
+  { k: 'b', n: 'Después de la siesta', s: 'Tras siesta',  d: 'Manos y sentidos',    areas: ['fina', 'sensorial'] },
+  { k: 'c', n: 'Antes de dormir',      s: 'Al dormir',    d: 'Calma y cariño',      areas: ['lenguaje', 'socio'] }
+];
+
+/* El paseo al parque queda fijo el domingo al despertar; lo demás rota cada semana */
+const SUNDAY_WALK = 29;
+
+const DAYS = [
+  { k: 'lun', n: 'Lunes' }, { k: 'mar', n: 'Martes' }, { k: 'mie', n: 'Miércoles' },
+  { k: 'jue', n: 'Jueves' }, { k: 'vie', n: 'Viernes' }, { k: 'sab', n: 'Sábado' }, { k: 'dom', n: 'Domingo' }
+];
+
+const TIPS = [
+  'Si un objeto entra completo por el tubo de un papel higiénico, es peligro de atoro. Guárdalo fuera de su alcance.',
+  'Con 15 a 20 minutos al día basta, repartidos en ratitos de 5 a 10 minutos.',
+  'Si se aburre, llora o voltea la cara, para y prueba otro día. Jugar debe ser divertido para las dos partes.',
+  'Repetir el mismo juego muchas veces es justo como aprende. No necesitas cambiarlo seguido.',
+  'Los andadores no se recomiendan. Mejor que practique empujando una caja con peso o de tu mano.',
+  'Las pantallas no le enseñan a esta edad. Las videollamadas con la familia sí valen.',
+  'Cuando señale algo, ponle nombre: "¿Quieres la taza? Aquí está la taza".',
+  'Guarda el "no" para lo peligroso. Para lo demás, cámbiala de lugar o dale otro juguete.',
+  'El mejor momento para jugar es cuando está descansada y ya comió.',
+  'Antes de dormir, solo juegos tranquilos: los muy movidos le pueden quitar el sueño.',
+  'Cada lunes llega un plan nuevo. Revísalo el domingo para tener listos los materiales.'
+];
+
+const ACTIVITIES = [
+  { id: 1, n: 'Carrito empujador de caja', a: 'gruesa', min: 10,
+    mat: ['Caja de cartón firme (de leche o de abarrotes de la bodega)', '2 o 3 latas de atún o paquetes de arroz para darle peso', 'Cinta de embalaje'],
+    steps: ['Mete las latas en la caja y ciérrala con cinta.', 'Ponla sobre piso liso, frente a ella.', 'Anímala a pararse, apoyar las manos y empujar caminando.', 'Si la caja resbala mucho, agrégale más peso.'],
+    ben: ['Equilibrio y fuerza en las piernas', 'Primeros pasos con apoyo', 'Confianza para moverse sola'],
+    care: 'Retira alfombras sueltas y quédate cerca por si se cae.' },
+  { id: 2, n: 'Camino de cojines', a: 'gruesa', min: 10,
+    mat: ['Cojines del mueble y almohadas', 'Una frazada doblada', 'Su juguete favorito'],
+    steps: ['Arma un caminito blandito en el piso.', 'Pon su juguete favorito al final.', 'Tómala de las manos y anímala a cruzar gateando o caminando.', 'Celebra con aplausos cuando llegue.'],
+    ben: ['Ajusta el equilibrio en superficies que se hunden', 'Fortalece tobillos y tronco', 'Aprende a subir y bajar'],
+    care: 'Arma el camino lejos de muebles con esquinas.' },
+  { id: 3, n: 'Túnel de cajas', a: 'gruesa', min: 10,
+    mat: ['2 o 3 cajas grandes (las de televisor o refrigeradora; pídelas en tiendas de electrodomésticos)', 'Cinta de embalaje'],
+    steps: ['Abre las cajas por ambos lados.', 'Únelas con cinta formando un túnel.', 'Asómate por el otro extremo y llámala: "¡Ven, mi amor!".', 'Cuando salga, abrazo y aplausos.'],
+    ben: ['Coordinación al gatear', 'Noción de adentro y afuera', 'Valentía para explorar'],
+    care: 'Revisa que no queden grapas ni bordes filosos.' },
+  { id: 4, n: 'Paseo de los muebles', a: 'gruesa', min: 10,
+    mat: ['Sofá o sillón', 'Mesa de centro con las esquinas protegidas', '2 o 3 juguetes'],
+    steps: ['Coloca los juguetes sobre el mueble, un poco separados.', 'Ponla de pie, apoyada en el mueble.', 'Anímala a caminar de costado para alcanzarlos.', 'Ve alejando los juguetes poco a poco.'],
+    ben: ['El paso de costado, que viene antes de caminar sola', 'Fuerza en caderas y piernas', 'Planear cómo llegar a lo que quiere'],
+    care: 'Cubre las esquinas con protectores o una toalla doblada.' },
+  { id: 5, n: 'Pelota de medias', a: 'gruesa', min: 10,
+    mat: ['3 o 4 medias viejas'],
+    steps: ['Enrolla una media dentro de otra hasta formar una pelota firme.', 'Siéntense frente a frente y háganla rodar.', 'Luego, de pie y de tu mano, anímala a patearla.', 'Celebra cada patadita.'],
+    ben: ['Soltar y lanzar', 'Apoyarse un instante en un solo pie', 'Esperar su turno'],
+    care: 'Cose o amarra bien la pelota para que no se deshaga.' },
+  { id: 6, n: 'Alcancía de tapas', a: 'fina', min: 10,
+    mat: ['Tarro de leche en polvo o de avena con tapa de plástico', 'Tapas grandes de tapers o frascos (que no pasen por el tubo de papel higiénico)', 'Cúter, solo para el adulto'],
+    steps: ['Corta una ranura en la tapa del tarro, un poco más grande que las tapas.', 'Muéstrale cómo meter una: "¡Pum! ¿Dónde se fue?".', 'Dale las tapas una por una.', 'Abran el tarro juntas para sacarlas y volver a empezar.'],
+    ben: ['Girar la muñeca para encajar', 'Precisión entre mano y ojo', 'Entiende que las cosas siguen ahí aunque no las vea'],
+    care: 'Cubre con cinta los bordes de la ranura.' },
+  { id: 7, n: 'Saca pañuelos', a: 'fina', min: 10,
+    mat: ['Caja de pañuelos vacía o tubo de papas fritas con un hueco en la tapa', 'Retazos de tela o pañuelos de colores amarrados en cadena'],
+    steps: ['Amarra los retazos uno detrás de otro.', 'Mételos en la caja y deja asomar una puntita.', 'Muéstrale cómo jalar… ¡y sale toda la cadena!', 'Vuelve a meterlos para que repita.'],
+    ben: ['Fuerza al agarrar', 'Causa y efecto', 'Sorpresa y atención'],
+    care: 'Usa telas anchas, no cintas delgadas, y guárdalas al terminar.' },
+  { id: 8, n: 'Picoteo de pinza', a: 'fina', min: 15,
+    mat: ['Su plato o bandeja', 'Trocitos blandos que ya come: plátano de seda, papaya, zapallo sancochado'],
+    steps: ['Corta trocitos blandos que se aplasten fácil entre tus dedos.', 'Ponlos en su bandeja a la hora de comer.', 'Déjala recogerlos sola con los dedos.', 'Celebra cada trocito que se lleve a la boca.'],
+    ben: ['La pinza fina con pulgar e índice', 'Comer con autonomía', 'Probar sabores y texturas'],
+    care: 'Siempre sentada y contigo al lado. Nada de uvas enteras, maní ni canchita.' },
+  { id: 9, n: 'Torre de vasitos', a: 'fina', min: 10,
+    mat: ['Vasos de plástico duro de distintos tamaños', 'Tapers con tapa'],
+    steps: ['Apila 2 o 3 vasos y deja que los tumbe.', 'Pon uno en su mano y anímala a ponerlo encima de otro.', 'Muéstrale cómo meter el chico dentro del grande.', 'Nombra los tamaños: "grande", "chiquito".'],
+    ben: ['Soltar con control', 'Diferenciar tamaños', 'Apilar sus primeros 2 bloques'],
+    care: 'Usa plástico duro que no se quiebre si lo muerde.' },
+  { id: 10, n: 'Pintura de yogur', a: 'fina', min: 15,
+    mat: ['Yogur natural', 'Gotas de jugo de beterraga, fresa o zanahoria para colorear', 'Bandeja o mantel de hule'],
+    steps: ['Separa el yogur en 2 o 3 potes y colorea cada uno con un jugo.', 'Pon cucharadas sobre la bandeja.', 'Déjala embarrar con dedos y palmas.', 'Termina con baño o paños húmedos.'],
+    ben: ['Mover cada dedo por separado', 'Conocer colores y texturas', 'Crear sin miedo a ensuciarse'],
+    care: 'Todo es comestible, así que si se lo lleva a la boca no pasa nada. Úsalo solo si ya probó yogur.' },
+  { id: 11, n: 'Narrador de la casa', a: 'lenguaje', min: 5,
+    mat: ['Ninguno, solo tu voz'],
+    steps: ['Cuéntale con frases cortas lo que haces: "Ahora te cambio el pañal".', 'Señala lo que nombras.', 'Cuando balbucee, espera y respóndele como en una conversación.', 'Completa sus palabras: si dice "ua", tú dices "¡agua!".'],
+    ben: ['Muchas palabras nuevas', 'Turnos para hablar y escuchar', 'Se siente escuchada'],
+    tip: 'Háblale a su altura y mirándola a la cara.' },
+  { id: 12, n: 'Caja de cosas de la casa', a: 'lenguaje', min: 10,
+    mat: ['Una canasta', '4 o 5 objetos seguros: cuchara de palo, taza de plástico, media, pelota, esponja nueva'],
+    steps: ['Saca un objeto a la vez y nómbralo dos veces: "¡Cuchara! Es una cuchara".', 'Déjala explorarlo con las manos.', 'Pon dos objetos al frente y pregunta: "¿Dónde está la media?".', 'Celebra cuando lo señale o lo toque.'],
+    ben: ['Une palabras con objetos', 'Aprende a señalar', 'Entiende más de lo que dice'],
+    tip: 'Cambia los objetos cada semana para mantener su curiosidad.' },
+  { id: 13, n: 'Libro de fotos', a: 'lenguaje', min: 10,
+    mat: ['Fotos impresas de la familia y mascotas (en la imprenta o librería del barrio)', 'Bolsitas zip o micas', 'Cinta de embalaje'],
+    steps: ['Mete cada foto en una bolsita.', 'Únelas por un costado con cinta, como un librito.', 'Mírenlo juntas: "¿Quién es? ¡Es la abuelita!".', 'Deja que ella pase las páginas.'],
+    ben: ['Reconoce a su familia', 'Aprende sus nombres', 'Se siente cerca de quienes viven lejos'],
+    tip: 'Agrega fotos de ella misma: le encanta verse.' },
+  { id: 14, n: 'Canciones con gestos', a: 'lenguaje', min: 10,
+    mat: ['Ninguno'],
+    steps: ['Elige una canción con movimientos: "Los pollitos dicen", "Tortita de manteca" o "Cinco lobitos".', 'Cántala despacio haciendo los gestos.', 'Toma sus manitos y hazlos con ella.', 'Repítela varios días seguidos.'],
+    ben: ['Ritmo y memoria', 'Imita gestos', 'Practica sonidos que luego serán palabras'],
+    tip: 'Haz una pausa antes de la última palabra para que intente completarla.' },
+  { id: 15, n: 'Sonidos de animales', a: 'lenguaje', min: 10,
+    mat: ['Animalitos de juguete o dibujos grandes: perro, gato, pollito, vaca'],
+    steps: ['Muéstrale un animal y di su nombre.', 'Haz su sonido: "El perro hace… ¡guau!".', 'La siguiente vez, haz una pausa antes del sonido.', 'Celebra cualquier intento.'],
+    ben: ['Imita sonidos', 'Une el sonido con la imagen', 'Atención y escucha'],
+    tip: 'Si ven un perro o un gato en la calle, ¡aprovecha!' },
+  { id: 16, n: '¿Dónde está?', a: 'cognitivo', min: 5,
+    mat: ['Un pañal de tela o una manta', 'Su juguete favorito'],
+    steps: ['Mientras te mira, cubre el juguete con la tela.', 'Pregunta: "¿Dónde está?".', 'Espera a que levante la tela y celebra.', 'Nivel 2: usa dos telas y escóndelo bajo una.'],
+    ben: ['Entiende que las cosas siguen existiendo aunque no las vea', 'Memoria', 'Resolver problemas'],
+    tip: 'Si no lo busca, deja una puntita del juguete a la vista.' },
+  { id: 17, n: 'Vasos sorpresa', a: 'cognitivo', min: 5,
+    mat: ['3 vasos de plástico opacos', 'Una pelota de medias'],
+    steps: ['Muéstrale la pelota y escóndela bajo un vaso mientras te mira.', 'Pregunta: "¿Dónde está?".', 'Empieza con 1 vaso; cuando lo domine, usa 2 y luego 3.', 'Deja que ella la esconda para ti.'],
+    ben: ['Atención', 'Memoria de corto plazo', 'Turnos de juego'],
+    tip: 'Mueve los vasos despacio: no es un truco, es un juego.' },
+  { id: 18, n: 'Rampa de rodar', a: 'cognitivo', min: 10,
+    mat: ['Tabla de picar o cartón firme apoyado en un cojín', 'Pelota o carrito que no pase por el tubo de papel higiénico'],
+    steps: ['Arma la rampa apoyando la tabla en el cojín.', 'Suelta la pelota desde arriba: "Uno, dos, tres… ¡se fue!".', 'Dale la pelota para que la suelte ella.', 'Cambia la altura y miren qué pasa.'],
+    ben: ['Causa y efecto', 'Anticipar lo que va a pasar', 'Seguir con la mirada'],
+    tip: 'Pon un vaso al final de la rampa: ¡le encantará tumbarlo!' },
+  { id: 19, n: 'Encaja tapers', a: 'cognitivo', min: 10,
+    mat: ['3 tapers de distinto tamaño con sus tapas'],
+    steps: ['Dale los tapers abiertos y las tapas sueltas.', 'Muéstrale cómo tapar uno.', 'Ayúdala a probar qué tapa va con cada taper.', 'Luego metan el chico dentro del grande.'],
+    ben: ['Comparar tamaños', 'Aprender probando', 'Paciencia'],
+    tip: 'Si se frustra, deja solo un taper y su tapa.' },
+  { id: 20, n: 'Botellas sensoriales', a: 'sensorial', min: 10,
+    mat: ['Botellas de agua de 500 ml limpias', 'Agua, aceite y colorante; escarcha; arroz o fideos cortos de colores', 'Silicona caliente y cinta aislante'],
+    steps: ['Llena cada botella con algo distinto.', 'Pega la tapa con silicona y fórrala con cinta aislante.', 'Dáselas para que las agite, las ruede y las mire contra la luz.', 'Nombra lo que pasa: "¡Mira cómo baja!".'],
+    ben: ['Seguir objetos con la mirada', 'Diferenciar sonidos', 'Calma y concentración'],
+    care: 'Revisa que la tapa siga bien pegada antes de cada uso.' },
+  { id: 21, n: 'Maracas de menestras', a: 'sensorial', min: 10,
+    mat: ['Botellitas de yogur bebible o tarros chicos', 'Frejoles, arroz o maíz para cancha', 'Silicona y cinta aislante'],
+    steps: ['Pon un tipo de menestra en cada envase.', 'Sella bien la tapa con silicona y cinta.', 'Pon música criolla, huayno o cumbia y agiten juntas.', 'Para la música de golpe: ¡a ver si ella también para!'],
+    ben: ['Ritmo', 'Diferenciar sonidos', 'Escuchar y responder'],
+    care: 'Las menestras siempre selladas, nunca sueltas en su mano.' },
+  { id: 22, n: 'Tablero de texturas', a: 'sensorial', min: 10,
+    mat: ['Un cartón grande', 'Retazos de tela polar, lana de alpaca, yute de costal, esponja y papel aluminio', 'Silicona caliente'],
+    steps: ['Pega cada material en el cartón, dejando espacio entre ellos.', 'Guía su mano sobre cada uno.', 'Nómbralos: "Esto es suave… esto raspa".', 'Deja que explore sola.'],
+    ben: ['Palabras para lo que siente', 'Acepta texturas nuevas', 'Curiosidad'],
+    care: 'Revisa que nada se despegue.' },
+  { id: 23, n: 'Bandeja del mercado', a: 'sensorial', min: 10,
+    mat: ['Una bandeja', 'Papa amarilla, camote, mandarina, pepino y un choclo con hojas'],
+    steps: ['Pon los alimentos enteros en la bandeja.', 'Déjala tocarlos, rodarlos y olerlos.', 'Nombra cada uno: "Esta es la papa. ¡Qué pesada!".', 'Pelen juntas una mandarina y huelan.'],
+    ben: ['Formas, pesos y olores', 'Palabras nuevas', 'Conoce la comida de su casa'],
+    care: 'Solo piezas grandes y enteras que no le quepan completas en la boca.' },
+  { id: 24, n: 'Juego de agua', a: 'sensorial', min: 15,
+    mat: ['Una batea', '3 o 4 cm de agua tibia', 'Vasitos, coladera de plástico y esponja'],
+    steps: ['Llena la batea con poca agua tibia, en el patio o el baño.', 'Dale los vasitos y la coladera.', 'Muéstrale cómo pasar agua de un vaso a otro.', 'Exprimen la esponja juntas.'],
+    ben: ['Coordinación entre mano y ojo', 'Lleno y vacío', 'Calma'],
+    care: 'Nunca sola ni un segundo cerca del agua. Vacía la batea al terminar.' },
+  { id: 25, n: 'Cucú, ¡tás!', a: 'socio', min: 5,
+    mat: ['Tus manos o una toalla'],
+    steps: ['Tápate la cara con las manos o la toalla.', 'Aparece con una sonrisa: "¡Cucú… tás!".', 'Luego tápale la carita suavecito a ella.', 'Escóndete detrás de la puerta un segundito y vuelve.'],
+    ben: ['Aprende que quien se va, regresa', 'Alivia la ansiedad de separación', 'Risas y vínculo'],
+    tip: 'Si se asusta, hazlo más lento y con la cara más cerca.' },
+  { id: 26, n: 'El espejo de las caras', a: 'socio', min: 10,
+    mat: ['Un espejo seguro: el del ropero o uno irrompible de bazar'],
+    steps: ['Siéntense juntas frente al espejo.', 'Señala: "¿Quién es? ¡Es {name}!".', 'Hagan caras: feliz, sorprendida, triste.', 'Nombra cada emoción mientras la hacen.'],
+    ben: ['Se reconoce a sí misma', 'Pone nombre a las emociones', 'Imita gestos'],
+    tip: 'Tócale la nariz y luego la tuya en el espejo: "Tu nariz, mi nariz".' },
+  { id: 27, n: 'Dame y toma', a: 'socio', min: 5,
+    mat: ['Un juguete o una pelota'],
+    steps: ['Extiende la mano: "¿Me das?".', 'Cuando te lo dé, dile "¡Gracias!".', 'Devuélveselo: "Toma".', 'Repitan como un ping-pong.'],
+    ben: ['Turnos y compartir', 'Sigue instrucciones sencillas', 'Palabras de cortesía'],
+    tip: 'Si no te lo da, no se lo quites: vuelve a intentarlo luego.' },
+  { id: 28, n: 'Masajito después del baño', a: 'socio', min: 10,
+    mat: ['Aceite o crema para bebé que ya use', 'Una toalla'],
+    steps: ['Calienta un poco de crema entre tus manos.', 'Masajea suave piernas, brazos, pancita y espalda.', 'Cántale o háblale bajito.', 'Termina con un abrazo.'],
+    ben: ['Conoce su cuerpo', 'Calma antes de dormir', 'Vínculo y confianza'],
+    care: 'Usa solo productos para bebé que ya conozcas.' },
+  { id: 29, n: 'Paseo al parque', a: 'gruesa', min: 20,
+    mat: ['Zapatitos cómodos', 'Un parque con pasto', 'Una pelota'],
+    steps: ['Busca una zona de pasto parejo.', 'Camina con ella de tus dos manos, luego de una.', 'Déjala gatear y tocar el pasto, las hojas y la tierra.', 'Nombra lo que ven: "perro", "árbol", "pájaro".'],
+    ben: ['Caminar en terreno disparejo', 'Naturaleza para los sentidos', 'Vocabulario nuevo'],
+    care: 'Revisa el pasto antes: sin vidrios, colillas ni caca de perro. Usa gorrito y protector solar.' },
+
+  /* ---------- desde los 13 meses ---------- */
+  { id: 30, n: 'Escalera de cojines', a: 'gruesa', min: 10, age: [13, 18],
+    mat: ['2 o 3 cojines firmes del mueble', 'Una frazada doblada'],
+    steps: ['Pon la frazada en el piso y encima los cojines en forma de escalón bajito.', 'Anímala a subir gateando hasta arriba.', 'Enséñale a bajar de espaldas, con los pies primero.', 'Celebra cada vez que llegue arriba y abajo.'],
+    ben: ['Subir y bajar con fuerza en brazos y piernas', 'Aprende a bajar de forma segura', 'Confianza en su cuerpo'],
+    care: 'Arma la escalera lejos de muebles con esquinas. Nunca escaleras de verdad sin tu mano.' },
+  { id: 31, n: 'Primeros garabatos', a: 'fina', min: 10, age: [13, 18],
+    mat: ['Crayolas gruesas (jumbo) que digan "no tóxico"', 'Papelógrafo o papel kraft (librería)', 'Cinta masking'],
+    steps: ['Pega el papel al piso o a la mesa con cinta masking.', 'Haz una raya tú primero: "¡Mira, una raya!".', 'Dale una crayola y deja que raye libre.', 'Nombra los colores que usa.'],
+    ben: ['Agarra la crayola con toda la mano', 'Descubre que su mano deja una marca', 'Prepara la mano para escribir más adelante'],
+    care: 'Crayolas grandes y no tóxicas. Guárdalas al terminar.' },
+  { id: 32, n: 'Caja de formas', a: 'cognitivo', min: 10, age: [13, 18],
+    mat: ['Caja de zapatos con tapa', 'Esponjas de cocina nuevas cortadas en círculo y cuadrado grandes', 'Cúter, solo para el adulto'],
+    steps: ['Corta en la tapa un agujero redondo y uno cuadrado, del tamaño de las esponjas.', 'Muéstrale cómo meter el círculo por su agujero.', 'Si no entra, ayúdala a girarlo.', 'Abran la caja y vuelvan a empezar.'],
+    ben: ['Reconoce formas', 'Gira la mano para encajar', 'Resuelve problemas probando'],
+    tip: 'Empieza con un solo agujero redondo y agrega el cuadrado cuando lo domine.' },
+  { id: 33, n: '¿Dónde está tu nariz?', a: 'lenguaje', min: 5, age: [13, 18],
+    mat: ['Ninguno'],
+    steps: ['Toca su nariz: "Esta es tu nariz".', 'Pregunta: "¿Dónde está la nariz de mamá?" y deja que la toque.', 'Canta despacio "Cabeza, hombros, rodillas y pies".', 'Agrega una parte nueva del cuerpo cada semana.'],
+    ben: ['Aprende las partes del cuerpo', 'Sigue instrucciones sencillas', 'Señala lo que le piden'],
+    tip: 'Aprovecha el baño o cuando la vistes: "Ahora la manga para tu brazo".' },
+  { id: 34, n: 'A guardar los juguetes', a: 'socio', min: 5, age: [13, 18],
+    mat: ['Una canasta o caja', 'Sus juguetes'],
+    steps: ['Canta: "A guardar, a guardar, cada cosa en su lugar".', 'Guarda tú un juguete y dale otro a ella.', 'Aplaude cada juguete que entra en la canasta.', 'Hazlo cada día al terminar de jugar.'],
+    ben: ['Rutina y orden', 'Le gusta ayudar', 'Se siente capaz'],
+    tip: 'Deja pocos juguetes afuera para que guardar no sea una montaña.' },
+  { id: 35, n: 'Orquesta de ollas', a: 'sensorial', min: 10, age: [13, 18],
+    mat: ['2 o 3 ollas o tapers boca abajo', 'Una cuchara de palo', 'Una tapa de olla'],
+    steps: ['Pon las ollas boca abajo en el piso.', 'Dale la cuchara de palo y muéstrale cómo tocar.', 'Prueben tocar fuerte y suavecito.', 'Pon música y toquen juntas.'],
+    ben: ['Ritmo', 'Diferencia sonidos fuertes y suaves', 'Coordinación de brazos'],
+    tip: 'Si el ruido te cansa, usa tapers de plástico: suenan más bajito.' },
+
+  /* ---------- desde los 16 meses ---------- */
+  { id: 36, n: 'Paseo del carrito', a: 'gruesa', min: 10, age: [16, 18],
+    mat: ['Caja de zapatos', 'Pita gruesa de máximo 30 cm', 'Un peluche'],
+    steps: ['Haz un agujero en la caja y amarra la pita con un nudo grande.', 'Sienta al peluche adentro: "¡Vamos de paseo!".', 'Anímala a caminar jalando el carrito.', 'Hagan un recorrido por la casa.'],
+    ben: ['Camina segura mientras hace otra cosa', 'Equilibrio', 'Juego de imaginar'],
+    care: 'La pita de máximo 30 cm. Guarda el carrito al terminar y nunca lo dejes en la cuna.' },
+  { id: 37, n: 'Palitos en el tarro', a: 'fina', min: 10, age: [16, 18],
+    mat: ['Tarro de leche con tapa de plástico', 'Baja lenguas de madera (farmacia) o sorbetes gruesos', 'Cúter, solo para el adulto'],
+    steps: ['Haz 4 o 5 agujeros pequeños en la tapa del tarro.', 'Muéstrale cómo meter un palito por un agujero.', 'Deja que meta todos los que pueda.', 'Abran el tarro y vuelvan a empezar.'],
+    ben: ['Pinza más precisa', 'Coordinación entre mano y ojo', 'Concentración'],
+    care: 'Palitos lisos, sin astillas. Siempre contigo al lado.' },
+  { id: 38, n: 'La comidita de la muñeca', a: 'cognitivo', min: 10, age: [16, 18],
+    mat: ['Una muñeca o peluche', 'Taza, plato y cuchara de plástico'],
+    steps: ['Dale de comer a la muñeca: "Mmm, ¡qué rico!".', 'Pásale la cuchara a ella.', 'Pídele: "Dale agua a la muñeca".', 'Después, a dormir con una mantita.'],
+    ben: ['Juego simbólico: imaginar', 'Imita lo que ve en casa', 'Entiende instrucciones'],
+    tip: 'Usa las palabras de su rutina: "papa", "agua", "a dormir".' },
+  { id: 39, n: 'Bolsa mágica', a: 'sensorial', min: 10, age: [16, 18],
+    mat: ['Bolsa ziploc gruesa', 'Gel transparente para el cabello', 'Tapas grandes de colores', 'Cinta de embalaje'],
+    steps: ['Pon el gel y las tapas dentro de la bolsa y saca el aire.', 'Ciérrala y refuerza los 4 lados con cinta.', 'Pégala a la mesa o al piso con más cinta.', 'Muéstrale cómo mover las tapas apretando con el dedo.'],
+    ben: ['Fuerza en los dedos', 'Colores y texturas', 'Calma y concentración'],
+    care: 'Revisa que no tenga fugas y nunca la dejes sola con la bolsa.' },
+  { id: 40, n: '¿Aló? ¿Quién llama?', a: 'lenguaje', min: 5, age: [16, 18],
+    mat: ['Un celular de juguete o un tubo de papel toalla'],
+    steps: ['"Ring, ring", contesta tú: "¿Aló? ¡Hola, abuelita!".', 'Pásale el teléfono a ella.', 'Espera su respuesta y sigue la conversación.', 'Luego llámala tú a ella.'],
+    ben: ['Turnos para conversar', 'Palabras nuevas', 'Imaginación'],
+    tip: 'Usa nombres de la familia de verdad.' },
+  { id: 41, n: 'Imítame', a: 'socio', min: 5, age: [16, 18],
+    mat: ['Ninguno'],
+    steps: ['Haz un gesto, como aplaudir: "¡Haz como yo!".', 'Espera a que te imite y celebra.', 'Agrega más: tocarte la cabeza, mover las manos, dar una vuelta.', 'Cambien: ahora tú la imitas a ella.'],
+    ben: ['Aprende imitando', 'Atención', 'Conexión y risas'],
+    tip: 'Celebra mucho, aunque lo haga a medias.' }
+];
+
+/* Edad en meses en que se usa cada juego (los 29 primeros, desde los 12) */
+const AGE_LIMITS = { 1: 15, 4: 14, 16: 15 };
+ACTIVITIES.forEach(a => { if (!a.age) a.age = [12, AGE_LIMITS[a.id] || 18]; });
+
+/* Modo "día ocupado": juegos de 2 minutos sin materiales, por momento */
+const QUICK = [[25, 27, 41], [14, 15, 40], [11, 28, 33]];
+
+/* Hitos de los CDC (Aprenda los signos. Reaccione pronto.) */
+const MILESTONES = {
+  12: [
+    ['socio', 'Juega contigo a juegos como "Tortita de manteca"'],
+    ['lenguaje', 'Hace "chau" con la mano'],
+    ['lenguaje', 'Llama "mamá" o "papá" (o un nombre especial) a sus padres'],
+    ['lenguaje', 'Entiende el "no": se detiene o hace una pausa al oírlo'],
+    ['cognitivo', 'Mete algo en un recipiente, como un bloque en una taza'],
+    ['cognitivo', 'Busca lo que ve que escondes, como un juguete bajo una manta'],
+    ['gruesa', 'Se jala de algo para pararse'],
+    ['gruesa', 'Camina apoyándose en los muebles'],
+    ['fina', 'Toma de una taza sin tapa mientras tú la sostienes'],
+    ['fina', 'Agarra cositas con el índice y el pulgar']
+  ],
+  15: [
+    ['socio', 'Imita a otros niños cuando juega'],
+    ['socio', 'Te muestra un objeto que le gusta'],
+    ['socio', 'Aplaude cuando está emocionada'],
+    ['socio', 'Abraza una muñeca o un peluche'],
+    ['socio', 'Demuestra cariño con abrazos, caricias o besos'],
+    ['lenguaje', 'Intenta decir 1 o 2 palabras además de "mamá" o "papá"'],
+    ['lenguaje', 'Mira un objeto conocido cuando lo nombras'],
+    ['lenguaje', 'Sigue instrucciones acompañadas de un gesto'],
+    ['lenguaje', 'Señala para pedir algo o pedir ayuda'],
+    ['cognitivo', 'Intenta usar las cosas como se debe: teléfono, taza, libro'],
+    ['cognitivo', 'Apila al menos 2 objetos pequeños'],
+    ['gruesa', 'Da algunos pasos sola'],
+    ['fina', 'Come con los dedos']
+  ],
+  18: [
+    ['socio', 'Se aleja de ti, pero te busca para asegurarse de que estás cerca'],
+    ['socio', 'Señala para mostrarte algo que le llama la atención'],
+    ['socio', 'Extiende las manos para que se las laves'],
+    ['socio', 'Mira algunas páginas de un libro contigo'],
+    ['socio', 'Ayuda cuando la vistes: pasa los brazos por las mangas'],
+    ['lenguaje', 'Intenta decir 3 palabras o más además de "mamá" o "papá"'],
+    ['lenguaje', 'Sigue instrucciones de 1 paso sin gestos, como "dámelo"'],
+    ['cognitivo', 'Imita tareas de la casa, como barrer'],
+    ['cognitivo', 'Juega de forma sencilla, como empujar un carrito'],
+    ['gruesa', 'Camina sin agarrarse'],
+    ['gruesa', 'Se sube y baja del sofá o silla sin ayuda'],
+    ['fina', 'Hace garabatos'],
+    ['fina', 'Toma de una taza sin tapa, aunque a veces derrame'],
+    ['fina', 'Come con los dedos e intenta usar la cuchara']
+  ]
+};
+
+/* ---------- Ilustraciones (160 × 120) ---------- */
+const sh = (cx, cy, rx) => `<ellipse class="sh" cx="${cx}" cy="${cy}" rx="${rx}" ry="5"/>`;
+const heart = (x, y, s, c) => `<path class="${c}" transform="translate(${x} ${y}) scale(${s})" d="M0 6C-8 0-7-7-2-6C-1-5.6 0-4.6 0-3.6C0-4.6 1-5.6 2-6C7-7 8 0 0 6Z"/>`;
+const star = (x, y, s, c) => `<polygon class="${c}" transform="translate(${x} ${y}) scale(${s})" points="0,-12 3.1,-4.2 11.4,-3.7 5,1.6 7,9.7 0,5.2 -7,9.7 -5,1.6 -11.4,-3.7 -3.1,-4.2"/>`;
+const spark = (x, y, r) => `<path class="l n" d="M${x} ${y - r}v${2 * r}M${x - r} ${y}h${2 * r}"/>`;
+const finger = d => `<path class="fo" d="${d}"/><path class="fi" d="${d}"/>`;
+
+const ART = {
+  1: () => sh(84, 100, 46) +
+    `<path class="l n" d="M18 66h14M14 77h16M20 88h12"/>` +
+    `<rect class="l c-sk" x="62" y="36" width="16" height="16" rx="2"/><ellipse class="l c-cr" cx="70" cy="36" rx="8" ry="3"/>` +
+    `<rect class="l c-pk" x="84" y="39" width="16" height="13" rx="2"/><ellipse class="l c-cr" cx="92" cy="39" rx="8" ry="3"/>` +
+    `<path class="l c-br" d="M46 52 32 36 46 32 60 50Z"/><path class="l c-br" d="M120 52 134 36 120 32 106 50Z"/>` +
+    `<rect class="l c-br" x="46" y="52" width="74" height="46" rx="4"/>` +
+    `<rect class="c-cr" x="47.5" y="66" width="71" height="7" opacity=".75"/>` + heart(83, 86, 0.9, 'l c-rs'),
+  2: () => sh(80, 104, 66) +
+    `<path class="l n dash" d="M30 60Q80 34 122 50"/>` +
+    `<rect class="l c-pk" x="12" y="72" width="46" height="28" rx="11"/><circle class="c-ln" cx="35" cy="86" r="2.2"/>` +
+    `<rect class="l c-li" x="56" y="66" width="46" height="30" rx="11"/><circle class="c-ln" cx="79" cy="81" r="2.2"/>` +
+    `<rect class="l c-pc" x="100" y="72" width="46" height="28" rx="11"/><circle class="c-ln" cx="123" cy="86" r="2.2"/>` +
+    star(126, 58, 1, 'l c-bt'),
+  3: () => sh(82, 104, 62) +
+    `<path class="l c-br" d="M84 44 138 52v44l-54 6Z"/><path class="l n" d="M111 48v51"/>` +
+    `<rect class="l c-br" x="22" y="44" width="62" height="58" rx="4"/>` +
+    `<path class="c-ln" opacity=".85" d="M33 102V72a20 20 0 0 1 40 0v30Z"/>` +
+    `<circle class="c-cr" cx="46" cy="82" r="4.5"/><circle class="c-cr" cx="60" cy="82" r="4.5"/>` +
+    `<circle class="c-ln" cx="47" cy="83" r="2"/><circle class="c-ln" cx="61" cy="83" r="2"/>` + heart(132, 32, 1, 'l c-rs'),
+  4: () => sh(80, 106, 62) +
+    `<path class="l n dash" d="M50 50Q80 32 112 48"/>` +
+    `<rect class="l c-rs" x="26" y="54" width="108" height="30" rx="12"/>` +
+    `<rect class="l c-pk" x="22" y="78" width="116" height="20" rx="8"/>` +
+    `<rect class="l c-rs" x="12" y="66" width="22" height="34" rx="10"/><rect class="l c-rs" x="126" y="66" width="22" height="34" rx="10"/>` +
+    `<path class="l n" d="M30 99v7M130 99v7"/>` +
+    `<circle class="l c-sk" cx="62" cy="70" r="8"/><path class="l n" d="M54 70h16"/>` + star(100, 68, 0.75, 'l c-bt'),
+  5: () => sh(80, 106, 32) +
+    `<path class="l n" d="M120 54q8 16 0 32M131 47q12 23 0 46"/>` +
+    `<circle class="l c-pk" cx="80" cy="72" r="30"/>` +
+    `<path class="l n" d="M56 58q24 10 48 0M52 78q28 12 56 0"/>` +
+    `<ellipse class="l c-rs" cx="94" cy="68" rx="8" ry="6"/>` +
+    `<path class="th" d="M62 50q18 6 36 0M58 90q22 8 44 0"/>`,
+  6: () => sh(80, 106, 34) +
+    `<rect class="l c-sk" x="50" y="50" width="60" height="54" rx="5"/>` +
+    `<rect class="c-pk" x="51.5" y="68" width="57" height="18"/>` + heart(80, 77, 0.75, 'c-rs') +
+    `<rect class="l n" x="50" y="50" width="60" height="54" rx="5"/>` +
+    `<ellipse class="l c-cr" cx="80" cy="50" rx="30" ry="8"/><rect class="c-ln" x="68" y="47.5" width="24" height="5" rx="2.5"/>` +
+    `<circle class="l c-rs" cx="80" cy="22" r="10"/><circle class="l n" cx="80" cy="22" r="5"/><path class="l n" d="M71 36l-2 4M89 36l2 4"/>`,
+  7: () => sh(80, 104, 42) +
+    `<rect class="l c-pk" x="70" y="40" width="18" height="18" rx="2" transform="rotate(-15 79 49)"/>` +
+    `<rect class="l c-bt" x="86" y="22" width="18" height="18" rx="2" transform="rotate(10 95 31)"/>` +
+    `<rect class="l c-mn" x="104" y="8" width="16" height="16" rx="2" transform="rotate(-8 112 16)"/>` +
+    `<rect class="l c-li" x="44" y="62" width="72" height="38" rx="4"/>` +
+    `<ellipse class="c-ln" cx="80" cy="62" rx="16" ry="4"/>` +
+    `<circle class="c-cr" cx="56" cy="76" r="2.5"/><circle class="c-cr" cx="70" cy="88" r="2.5"/><circle class="c-cr" cx="92" cy="80" r="2.5"/><circle class="c-cr" cx="104" cy="92" r="2.5"/>`,
+  8: () => sh(80, 102, 54) +
+    `<ellipse class="l c-cr" cx="80" cy="82" rx="56" ry="20"/><ellipse class="th" cx="80" cy="82" rx="42" ry="13"/>` +
+    `<circle class="l c-bt" cx="62" cy="80" r="6"/><circle class="l c-bt" cx="78" cy="88" r="6"/>` +
+    `<rect class="l c-pc" x="90" y="72" width="10" height="10" rx="2"/><rect class="l c-pc" x="103" y="82" width="10" height="10" rx="2"/>` +
+    `<circle class="l c-rs" cx="92" cy="92" r="4"/>` +
+    finger('M44 40 57 68') + finger('M58 36 62 66') +
+    `<ellipse class="l c-pc" cx="50" cy="30" rx="14" ry="12"/>`,
+  9: () => sh(80, 106, 36) +
+    `<path class="l c-pk" d="M52 104 60 76h40l8 28Z"/><path class="l c-li" d="M58 76 65 52h30l7 24Z"/><path class="l c-mn" d="M64 52 70 32h20l6 20Z"/>` +
+    `<path class="th" d="M62 82h36M67 58h26M72 38h16"/>` +
+    `<path class="l c-sk" d="M118 104 124 88h16l6 16Z" transform="rotate(20 132 96)"/>` + spark(36, 40, 8) + spark(130, 30, 5),
+  10: () => sh(80, 106, 62) +
+    `<rect class="l c-cr" x="16" y="50" width="128" height="54" rx="10"/>` +
+    `<circle class="c-rs" cx="42" cy="68" r="10"/><circle class="c-bt" cx="68" cy="88" r="9"/><circle class="c-pc" cx="120" cy="66" r="10"/><circle class="c-li" cx="128" cy="92" r="6"/>` +
+    `<path class="sw" d="M30 90q10-12 22 0t22 0"/>` +
+    `<ellipse class="c-rs" cx="96" cy="84" rx="9" ry="10"/><ellipse class="c-rs" cx="85" cy="73" rx="3" ry="5" transform="rotate(-40 85 73)"/><ellipse class="c-rs" cx="90" cy="68" rx="3" ry="5" transform="rotate(-15 90 68)"/><ellipse class="c-rs" cx="97" cy="66" rx="3" ry="5"/><ellipse class="c-rs" cx="104" cy="68" rx="3" ry="5" transform="rotate(15 104 68)"/><ellipse class="c-rs" cx="108" cy="76" rx="3" ry="5" transform="rotate(45 108 76)"/>`,
+  11: () =>
+    `<path class="l c-pk" d="M38 18h40a18 18 0 0 1 18 18v10a18 18 0 0 1-18 18H56L38 82l4-18h-4a18 18 0 0 1-18-18V36a18 18 0 0 1 18-18Z"/>` +
+    `<path class="tx" d="M36 34h44M36 44h34M36 54h26"/>` +
+    `<path class="l c-li" d="M104 62h32a12 12 0 0 1 12 12v4a12 12 0 0 1-12 12h-6l8 14-20-14h-14a12 12 0 0 1-12-12v-4a12 12 0 0 1 12-12Z"/>` +
+    `<circle class="c-ln" cx="110" cy="76" r="2.6"/><circle class="c-ln" cx="120" cy="76" r="2.6"/><circle class="c-ln" cx="130" cy="76" r="2.6"/>` + heart(140, 30, 0.9, 'l c-rs'),
+  12: () => sh(80, 106, 50) +
+    `<rect class="l c-br" x="60" y="34" width="7" height="32" rx="3.5" transform="rotate(-14 63 50)"/><ellipse class="l c-br" cx="58" cy="28" rx="8" ry="11" transform="rotate(-14 58 28)"/>` +
+    `<path class="l n" d="M106 44q9 0 9 8t-9 8"/><rect class="l c-sk" x="84" y="38" width="22" height="26" rx="4"/>` +
+    `<path class="l c-pk" d="M114 26h13v22q0 7 8 9q5 2 2 9h-15q-8 0-8-10Z"/>` +
+    `<circle class="l c-mn" cx="76" cy="54" r="9"/>` +
+    `<path class="l c-bt" d="M34 62h92l-8 40H42Z"/><path class="th" d="M38 74h84M40 88h80M60 62l2 40M80 62v40M100 62l-2 40"/>` +
+    `<rect class="l c-bt" x="30" y="56" width="100" height="9" rx="4.5"/>`,
+  13: () => sh(80, 106, 54) +
+    `<path class="l c-cr" d="M80 40Q56 30 24 36v60q32-6 56 4Z"/><path class="l c-cr" d="M80 40q24-10 56-4v60q-32-6-56 4Z"/><path class="l n" d="M80 40v60"/>` +
+    `<rect class="l c-pk" x="36" y="46" width="32" height="28" rx="3"/><circle class="l c-pc" cx="52" cy="60" r="7"/><path class="l n" d="M49 62q3 3 6 0"/>` +
+    `<rect class="l c-li" x="92" y="46" width="32" height="28" rx="3"/><circle class="l c-pc" cx="108" cy="61" r="7"/><path class="l c-rs" d="M103 51l5 3 5-3v6l-5-3-5 3Z"/>` +
+    `<path class="tx" d="M38 86h28M94 86h28"/>`,
+  14: () =>
+    `<ellipse class="l c-rs" cx="34" cy="78" rx="9" ry="7"/><path class="l n" d="M42 76V40q10 2 13 13"/>` +
+    `<ellipse class="l c-li" cx="110" cy="72" rx="9" ry="7"/><ellipse class="l c-li" cx="136" cy="66" rx="9" ry="7"/><path class="l n" d="M118 70V36M144 64V30"/><path class="beam" d="M118 36 144 30"/>` +
+    `<rect class="l c-pc" x="60" y="48" width="20" height="38" rx="10" transform="rotate(-14 70 67)"/><rect class="l c-pc" x="80" y="48" width="20" height="38" rx="10" transform="rotate(14 90 67)"/>` +
+    `<path class="l n" d="M80 34v-10M66 38l-6-7M94 38l6-7"/>` + heart(80, 100, 1, 'l c-pk'),
+  15: () =>
+    `<ellipse class="l c-br" cx="42" cy="54" rx="9" ry="17" transform="rotate(22 42 54)"/><ellipse class="l c-br" cx="90" cy="54" rx="9" ry="17" transform="rotate(-22 90 54)"/>` +
+    `<circle class="l c-pc" cx="66" cy="68" r="26"/><circle class="c-ln" cx="57" cy="64" r="3"/><circle class="c-ln" cx="75" cy="64" r="3"/>` +
+    `<ellipse class="c-ln" cx="66" cy="74" rx="5" ry="4"/><path class="l n" d="M60 80q6 6 12 0"/>` +
+    `<path class="l c-cr" d="M106 52l-8 12 16-8Z"/><rect class="l c-cr" x="100" y="20" width="54" height="34" rx="15"/><text class="svt" x="127" y="42" text-anchor="middle">¡guau!</text>` +
+    `<circle class="l c-bt" cx="126" cy="94" r="12"/><circle class="c-ln" cx="130" cy="90" r="1.8"/><path class="l c-pc" d="M137 93l7 2-7 2Z"/>`,
+  16: () => sh(78, 104, 54) + star(116, 74, 0.95, 'l c-bt') +
+    `<path class="l c-pk" d="M22 102Q28 62 62 56q34-6 50 14 10 18 16 32Z"/>` +
+    `<path class="l n" d="M50 72q12 12 8 28M84 62q6 18 2 38"/>` +
+    `<circle class="c-cr" cx="40" cy="88" r="2.6"/><circle class="c-cr" cx="70" cy="74" r="2.6"/><circle class="c-cr" cx="100" cy="86" r="2.6"/><circle class="c-cr" cx="74" cy="92" r="2.6"/>` +
+    `<text class="svt big" x="132" y="44" text-anchor="middle">?</text>`,
+  17: () => sh(80, 106, 66) +
+    `<path class="l c-li" d="M20 102 28 64h28l8 38Z"/>` +
+    `<circle class="l c-mn" cx="80" cy="96" r="9"/>` +
+    `<path class="l c-pk" d="M58 84 66 46h28l8 38Z"/>` +
+    `<path class="l c-sk" d="M96 102l8-38h28l8 38Z"/>` +
+    `<path class="th" d="M24 94h36M62 76h36M100 94h36"/>` + spark(80, 30, 6),
+  18: () => sh(80, 106, 66) +
+    `<rect class="l c-li" x="104" y="72" width="42" height="32" rx="11"/>` +
+    `<path class="l c-br" d="M16 98 130 62l3 8L19 106Z"/>` +
+    `<path class="l n" d="M76 60l12-4M78 69l14-5"/>` +
+    `<circle class="l c-pk" cx="58" cy="76" r="10"/><path class="l n" d="M50 72l16 8"/>`,
+  19: () => sh(80, 106, 58) +
+    `<rect class="l c-sk" x="24" y="70" width="62" height="34" rx="6"/><rect class="l c-pk" x="22" y="54" width="66" height="9" rx="4.5" transform="rotate(-8 55 58)"/>` +
+    `<rect class="l c-mn" x="96" y="80" width="42" height="24" rx="5"/><rect class="l c-bt" x="98" y="62" width="38" height="8" rx="4" transform="rotate(10 117 66)"/>` +
+    `<path class="l n" d="M117 30v18M111 42l6 7 6-7"/>`,
+  20: () => sh(80, 106, 52) +
+    `<path class="c-cr" d="M42 104h30V58q0-8-6-12v-8H48v8q-6 4-6 12Z"/>` +
+    `<path class="c-sk" d="M44 102h26V72q-13 6-26 0Z"/>` +
+    `<circle class="c-bt" cx="51" cy="84" r="2.2"/><circle class="c-rs" cx="61" cy="92" r="2.2"/><circle class="c-li" cx="55" cy="96" r="1.8"/><circle class="c-bt" cx="64" cy="80" r="1.8"/>` +
+    `<path class="l n" d="M42 104h30V58q0-8-6-12v-8H48v8q-6 4-6 12Z"/><rect class="l c-rs" x="46" y="28" width="22" height="10" rx="3"/>` +
+    `<path class="c-cr" d="M88 104h30V58q0-8-6-12v-8H94v8q-6 4-6 12Z"/>` +
+    `<path class="c-bt" d="M90 102h26V84H90Z"/><path class="th" d="M94 90h4M104 94h4M98 98h4M108 88h4"/>` +
+    `<path class="l n" d="M88 104h30V58q0-8-6-12v-8H94v8q-6 4-6 12Z"/><rect class="l c-mn" x="92" y="28" width="22" height="10" rx="3"/>` +
+    spark(136, 44, 6) + spark(26, 52, 4),
+  21: () =>
+    `<path class="l n" d="M22 48q-9 16 0 32M14 42q-13 22 0 44M138 48q9 16 0 32M146 42q13 22 0 44"/>` +
+    `<g transform="rotate(-16 56 72)"><rect class="l c-pk" x="40" y="56" width="32" height="44" rx="11"/><rect class="l c-pk" x="48" y="44" width="16" height="14" rx="3"/><rect class="l c-rs" x="45" y="37" width="22" height="9" rx="3"/>` +
+    `<ellipse class="c-br" cx="50" cy="86" rx="3.2" ry="2.2"/><ellipse class="c-br" cx="60" cy="90" rx="3.2" ry="2.2"/><ellipse class="c-br" cx="56" cy="80" rx="3.2" ry="2.2"/></g>` +
+    `<g transform="rotate(16 104 72)"><rect class="l c-li" x="88" y="56" width="32" height="44" rx="11"/><rect class="l c-li" x="96" y="44" width="16" height="14" rx="3"/><rect class="l c-sk" x="93" y="37" width="22" height="9" rx="3"/>` +
+    `<ellipse class="c-bt" cx="98" cy="88" rx="3" ry="2"/><ellipse class="c-bt" cx="108" cy="84" rx="3" ry="2"/><ellipse class="c-bt" cx="104" cy="92" rx="3" ry="2"/></g>`,
+  22: () =>
+    `<rect class="l c-br" x="18" y="16" width="124" height="90" rx="8"/>` +
+    `<rect class="l c-pk" x="28" y="26" width="48" height="32" rx="6"/>` +
+    `<circle class="c-cr" cx="38" cy="36" r="2.4"/><circle class="c-cr" cx="52" cy="36" r="2.4"/><circle class="c-cr" cx="66" cy="36" r="2.4"/><circle class="c-cr" cx="45" cy="48" r="2.4"/><circle class="c-cr" cx="59" cy="48" r="2.4"/>` +
+    `<rect class="l c-cr" x="84" y="26" width="48" height="32" rx="6"/><path class="th" d="M90 36q4-4 8 0t8 0 8 0 8 0M90 47q4-4 8 0t8 0 8 0 8 0"/>` +
+    `<rect class="l c-bt" x="28" y="66" width="48" height="30" rx="6"/><path class="th" d="M38 68v26M48 68v26M58 68v26M68 68v26M30 76h44M30 86h44"/>` +
+    `<rect class="l c-sk" x="84" y="66" width="48" height="30" rx="6"/><path class="sh2" d="M92 76l12-5M98 88l16-7"/>`,
+  23: () => sh(80, 106, 62) +
+    `<ellipse class="l c-bt" cx="46" cy="72" rx="19" ry="13"/><circle class="c-br" cx="40" cy="68" r="1.8"/><circle class="c-br" cx="52" cy="76" r="1.8"/><circle class="c-br" cx="48" cy="66" r="1.5"/>` +
+    `<circle class="l c-pc" cx="84" cy="70" r="14"/><path class="l c-mn" d="M84 56q6-8 13-4-4 7-13 4Z"/>` +
+    `<g transform="rotate(-22 120 64)"><ellipse class="l c-bt" cx="120" cy="60" rx="9" ry="22"/><path class="th" d="M114 48h12M112 58h16M112 68h16M114 76h12M120 40v40"/>` +
+    `<path class="l c-mn" d="M112 76q-11-4-9-26 8 10 10 26Z"/><path class="l c-mn" d="M128 76q11-4 9-26-8 10-10 26Z"/></g>` +
+    `<path class="l c-cr" d="M12 84h136l-10 20H22Z"/>`,
+  24: () => sh(80, 108, 58) +
+    `<path class="l c-cr" d="M18 78h124l-10 28H28Z"/><path class="c-sk" d="M24 84h112l-7 19H31Z"/><path class="l n" d="M26 84q8-5 16 0t16 0 16 0 16 0 16 0 16 0 12 0"/>` +
+    `<ellipse class="l c-bt" cx="48" cy="82" rx="12" ry="7"/><circle class="l c-bt" cx="56" cy="72" r="6"/><circle class="c-ln" cx="57" cy="71" r="1.5"/><path class="l c-pc" d="M61 72l6 2-6 2Z"/>` +
+    `<path class="stw" d="M92 54q-3 10 1 24"/>` +
+    `<rect class="l c-pk" x="88" y="26" width="24" height="26" rx="4" transform="rotate(35 100 39)"/>` +
+    `<circle class="l c-sk" cx="80" cy="62" r="2.6"/><circle class="l c-sk" cx="104" cy="66" r="2.2"/>`,
+  25: () =>
+    `<path class="l c-rs" d="M80 30 64 21v18Z"/><path class="l c-rs" d="M80 30 96 21v18Z"/>` +
+    `<circle class="l c-pc" cx="80" cy="66" r="34"/><circle class="l c-rs" cx="80" cy="30" r="4.5"/>` +
+    `<circle class="c-rs" cx="58" cy="80" r="5" opacity=".6"/><circle class="c-rs" cx="102" cy="80" r="5" opacity=".6"/>` +
+    `<path class="l c-rs" d="M66 80q14 14 28 0Z"/>` +
+    `<rect class="l c-pk" x="44" y="50" width="32" height="24" rx="12" transform="rotate(-10 60 62)"/><rect class="l c-pk" x="84" y="50" width="32" height="24" rx="12" transform="rotate(10 100 62)"/>` +
+    `<text class="svt" x="138" y="30" text-anchor="middle">¡tás!</text>`,
+  26: () =>
+    `<path class="l n" d="M80 100v8M64 110h32"/>` +
+    `<ellipse class="l c-rs" cx="80" cy="58" rx="32" ry="42"/><ellipse class="l c-sk" cx="80" cy="58" rx="24" ry="34"/>` +
+    `<circle class="l c-pc" cx="80" cy="62" r="12"/><circle class="c-ln" cx="76" cy="60" r="1.6"/><circle class="c-ln" cx="84" cy="60" r="1.6"/><path class="l n" d="M76 66q4 4 8 0"/>` +
+    `<path class="sh2" d="M64 42q3-10 12-13"/>` + spark(126, 30, 8) + heart(34, 32, 1, 'l c-pk'),
+  27: () =>
+    `<path class="l n" d="M52 38q28-18 56 0"/><path class="l n" d="M101 31l7 7-9 2"/>` +
+    `<path class="l n" d="M108 98q-28 14-56 0"/><path class="l n" d="M59 104l-7-6 9-2"/>` +
+    `<rect class="l c-li" x="6" y="64" width="30" height="20" rx="6"/><ellipse class="l c-pc" cx="44" cy="74" rx="14" ry="10"/><ellipse class="l c-pc" cx="48" cy="63" rx="5" ry="7" transform="rotate(30 48 63)"/>` +
+    `<rect class="l c-pk" x="124" y="64" width="30" height="20" rx="6"/><ellipse class="l c-pc" cx="116" cy="74" rx="14" ry="10"/><ellipse class="l c-pc" cx="112" cy="63" rx="5" ry="7" transform="rotate(-30 112 63)"/>` +
+    `<circle class="l c-bt" cx="80" cy="66" r="12"/><path class="l n" d="M68 66q12 8 24 0"/>`,
+  28: () => sh(70, 106, 50) +
+    `<path class="l n" d="M45 40v-8h13"/><rect class="l c-cr" x="38" y="40" width="14" height="10" rx="2"/>` +
+    `<rect class="l c-pk" x="30" y="50" width="30" height="52" rx="8"/>` + heart(45, 76, 0.85, 'c-rs') +
+    `<path class="l c-bt" d="M120 18a22 22 0 1 0 16 36 18 18 0 1 1-16-36Z"/>` +
+    star(146, 74, 0.5, 'l c-bt') + star(80, 30, 0.45, 'l c-bt') + heart(100, 88, 1.5, 'l c-rs'),
+  29: () =>
+    `<path class="c-mn" opacity=".7" d="M0 98q80-16 160-2v24H0Z"/><path class="l n" d="M4 98q76-14 152-2"/>` +
+    `<circle class="l c-bt" cx="128" cy="30" r="12"/><path class="l n" d="M128 11v-5M128 49v5M109 30h-5M147 30h5M115 17l-4-4M141 43l4 4M141 17l4-4M115 43l-4 4"/>` +
+    `<rect class="l c-br" x="34" y="58" width="10" height="38" rx="3"/><circle class="l c-mn" cx="39" cy="46" r="22"/><circle class="c-cr" cx="32" cy="40" r="2.4"/><circle class="c-cr" cx="46" cy="50" r="2.4"/>` +
+    `<path class="l n dash" d="M58 104Q92 82 150 84"/>` +
+    `<ellipse class="c-rs" cx="78" cy="96" rx="3" ry="4"/><ellipse class="c-rs" cx="88" cy="92" rx="3" ry="4"/><ellipse class="c-rs" cx="102" cy="89" rx="3" ry="4"/><ellipse class="c-rs" cx="112" cy="87" rx="3" ry="4"/>` +
+    `<path class="l n" d="M64 102V90"/><circle class="l c-rs" cx="64" cy="86" r="4.5"/>`,
+  30: () => sh(80, 106, 62) +
+    `<path class="l n dash" d="M28 66Q48 46 70 46Q92 32 106 20"/>` +
+    `<rect class="l c-pk" x="20" y="78" width="122" height="24" rx="9"/><circle class="c-ln" cx="50" cy="90" r="2"/><circle class="c-ln" cx="112" cy="90" r="2"/>` +
+    `<rect class="l c-li" x="60" y="56" width="82" height="24" rx="9"/><circle class="c-ln" cx="100" cy="68" r="2"/>` +
+    `<rect class="l c-pc" x="100" y="34" width="42" height="24" rx="9"/><circle class="c-ln" cx="121" cy="46" r="2"/>` + star(126, 18, 0.8, 'l c-bt'),
+  31: () => sh(72, 106, 50) +
+    `<rect class="l c-cr" x="18" y="24" width="98" height="78" rx="4" transform="rotate(-4 67 63)"/>` +
+    `<path class="sw" d="M32 72q8-30 18-8t18-6 16-16"/><path class="swl" d="M40 88q14-8 26 0t26-4"/><circle class="swm" cx="88" cy="46" r="9"/>` +
+    `<g transform="rotate(35 122 62)"><rect class="l c-li" x="115" y="34" width="14" height="44" rx="3"/><path class="l c-li" d="M115 78h14l-7 12Z"/><path class="th" d="M115 46h14M115 66h14"/></g>`,
+  32: () => sh(80, 106, 54) +
+    `<rect class="l c-br" x="30" y="58" width="100" height="44" rx="4"/><rect class="l c-cr" x="26" y="50" width="108" height="12" rx="4"/>` +
+    `<circle class="c-ln" cx="62" cy="80" r="11" opacity=".85"/><rect class="c-ln" x="88" y="69" width="22" height="22" rx="2" opacity=".85"/>` +
+    `<circle class="l c-pk" cx="62" cy="24" r="10"/><path class="l n" d="M62 38v6M58 41l4 4 4-4"/>` +
+    `<rect class="l c-sk" x="92" y="14" width="20" height="20" rx="3" transform="rotate(14 102 24)"/>`,
+  33: () =>
+    `<path class="l n" d="M64 30q8-10 16 0"/>` +
+    `<circle class="l c-pc" cx="72" cy="64" r="34"/>` +
+    `<circle class="c-ln" cx="60" cy="58" r="3"/><circle class="c-ln" cx="84" cy="58" r="3"/>` +
+    `<circle class="c-rs" cx="52" cy="74" r="5" opacity=".6"/><circle class="c-rs" cx="92" cy="74" r="5" opacity=".6"/>` +
+    `<path class="l n" d="M64 80q8 7 16 0"/>` +
+    finger('M134 98 L86 70') + `<ellipse class="l c-rs" cx="72" cy="68" rx="5" ry="4"/>` +
+    `<text class="svt" x="130" y="30" text-anchor="middle">¡nariz!</text>`,
+  34: () => sh(80, 106, 46) +
+    `<path class="l n dash" d="M146 34Q140 54 118 58"/>` +
+    `<circle class="l c-pk" cx="70" cy="42" r="11"/><path class="l n" d="M60 38q10 6 20 0"/>` +
+    `<rect class="l c-bt" x="88" y="24" width="18" height="18" rx="3" transform="rotate(16 97 33)"/>` + star(48, 26, 0.8, 'l c-li') +
+    `<rect class="l c-sk" x="38" y="58" width="84" height="46" rx="6"/>` + heart(80, 80, 1.1, 'l c-rs'),
+  35: () => sh(80, 106, 64) +
+    `<path class="l c-sk" d="M18 102V78q0-12 12-12h34q12 0 12 12v24Z"/><rect class="l c-sk" x="40" y="58" width="14" height="9" rx="3"/>` +
+    `<path class="l c-pk" d="M84 102V84q0-10 10-10h30q10 0 10 10v18Z"/><rect class="l c-pk" x="102" y="66" width="12" height="8" rx="3"/>` +
+    `<g transform="rotate(-38 92 44)"><rect class="l c-br" x="88" y="22" width="8" height="40" rx="4"/><ellipse class="l c-br" cx="92" cy="18" rx="9" ry="12"/></g>` +
+    `<ellipse class="l c-rs" cx="30" cy="40" rx="6" ry="5"/><path class="l n" d="M36 39V18q8 2 10 10"/>` +
+    `<ellipse class="l c-li" cx="134" cy="38" rx="6" ry="5"/><path class="l n" d="M140 37V16"/>`,
+  36: () => sh(96, 106, 48) +
+    `<path class="l n" d="M140 66h10M138 76h14M140 86h10"/>` +
+    `<path class="l n" d="M74 82Q52 96 32 72"/><circle class="l c-rs" cx="29" cy="68" r="5"/>` +
+    `<circle class="l c-br" cx="94" cy="38" r="5"/><circle class="l c-br" cx="114" cy="38" r="5"/><circle class="l c-pc" cx="104" cy="48" r="13"/>` +
+    `<circle class="c-ln" cx="99" cy="46" r="1.8"/><circle class="c-ln" cx="109" cy="46" r="1.8"/><path class="l n" d="M101 52q3 3 6 0"/>` +
+    `<rect class="l c-br" x="74" y="58" width="60" height="34" rx="4"/>` + heart(104, 74, 0.8, 'c-rs') +
+    `<circle class="l c-cr" cx="88" cy="96" r="7"/><circle class="l c-cr" cx="120" cy="96" r="7"/>`,
+  37: () => sh(80, 106, 34) +
+    `<rect class="l c-br" x="64" y="20" width="7" height="40" rx="3" transform="rotate(-10 67 40)"/>` +
+    `<rect class="l c-li" x="78" y="14" width="7" height="44" rx="3"/>` +
+    `<rect class="l c-br" x="92" y="22" width="7" height="38" rx="3" transform="rotate(12 95 41)"/>` +
+    `<rect class="l c-mn" x="50" y="56" width="60" height="48" rx="5"/><ellipse class="l c-cr" cx="80" cy="56" rx="30" ry="8"/>` +
+    `<circle class="c-ln" cx="67" cy="56" r="2"/><circle class="c-ln" cx="81" cy="54" r="2"/><circle class="c-ln" cx="95" cy="56" r="2"/>` +
+    `<rect class="l c-li" x="124" y="70" width="7" height="34" rx="3" transform="rotate(64 128 87)"/>`,
+  38: () => sh(84, 106, 60) +
+    `<circle class="l c-br" cx="38" cy="38" r="8"/><circle class="l c-br" cx="74" cy="38" r="8"/><circle class="l c-br" cx="56" cy="58" r="24"/>` +
+    `<ellipse class="l c-cr" cx="56" cy="66" rx="11" ry="8"/><circle class="c-ln" cx="47" cy="52" r="2.2"/><circle class="c-ln" cx="65" cy="52" r="2.2"/><ellipse class="c-ln" cx="56" cy="63" rx="3" ry="2"/>` +
+    `<path class="l c-cr" d="M90 80h56q0 22-28 22t-28-22Z"/><circle class="c-pc" cx="108" cy="80" r="4"/><circle class="c-bt" cx="120" cy="79" r="4"/><circle class="c-pc" cx="130" cy="81" r="3"/>` +
+    `<g transform="rotate(-24 96 64)"><rect class="l c-li" x="80" y="61" width="34" height="6" rx="3"/><ellipse class="l c-li" cx="78" cy="64" rx="7" ry="5"/></g>` +
+    heart(130, 44, 1, 'l c-rs'),
+  39: () => sh(80, 108, 58) +
+    `<rect class="l c-sk" x="24" y="22" width="112" height="82" rx="10"/><rect class="l c-rs" x="24" y="22" width="112" height="12" rx="6"/>` +
+    `<circle class="l c-pk" cx="54" cy="58" r="9"/><circle class="l c-bt" cx="88" cy="76" r="9"/><circle class="l c-li" cx="104" cy="52" r="8"/><circle class="l c-mn" cx="58" cy="88" r="7"/>` +
+    `<path class="sh2" d="M34 46q4-6 10-6"/>` + finger('M146 112 L118 84'),
+  40: () =>
+    `<path class="l n" d="M30 44q-8 12 0 24M20 38q-13 18 0 36"/>` +
+    `<rect class="l c-pk" x="40" y="30" width="46" height="76" rx="11"/><rect class="l c-cr" x="47" y="40" width="32" height="34" rx="4"/>` +
+    `<circle class="l c-rs" cx="54" cy="86" r="4"/><circle class="l c-rs" cx="72" cy="86" r="4"/><circle class="l c-rs" cx="63" cy="96" r="4"/>` +
+    `<path class="l c-cr" d="M104 56l-6 12 16-8Z"/><rect class="l c-cr" x="98" y="26" width="54" height="32" rx="15"/><text class="svt" x="125" y="47" text-anchor="middle">¿aló?</text>`,
+  41: () => sh(80, 106, 62) +
+    `<path class="l n dash" d="M90 36q14-12 30-2"/><path class="l n" d="M114 30l6 4-7 3"/>` +
+    `<circle class="l c-pc" cx="20" cy="44" r="7"/><circle class="l c-pc" cx="80" cy="44" r="7"/>` +
+    `<circle class="l c-pc" cx="50" cy="72" r="26"/><circle class="c-ln" cx="41" cy="68" r="2.6"/><circle class="c-ln" cx="59" cy="68" r="2.6"/><path class="l n" d="M42 80q8 7 16 0"/>` +
+    `<circle class="l c-pk" cx="96" cy="70" r="6"/><circle class="l c-pk" cx="146" cy="70" r="6"/>` +
+    `<path class="l c-rs" d="M121 66 110 60v12Z"/><path class="l c-rs" d="M121 66 132 60v12Z"/>` +
+    `<circle class="l c-pk" cx="121" cy="86" r="19"/><circle class="l c-rs" cx="121" cy="66" r="3.5"/><circle class="c-ln" cx="114" cy="84" r="2.2"/><circle class="c-ln" cx="128" cy="84" r="2.2"/><path class="l n" d="M115 94q6 5 12 0"/>`
+};
+
+function art(id) {
+  const a = ACTIVITIES.find(x => x.id === id);
+  return `<svg class="art" viewBox="0 0 160 120" aria-hidden="true" focusable="false">${ART[id] ? ART[id]() : ''}</svg>`;
+}
+
+</script>
+<script>
+(function () {
+  'use strict';
+  const KEY = 'aiuni-juega-v3', OLD_KEY = 'aiuni-juega-v2';
+  const CFG = window.AIUNI_CFG || { build: 'artifact' };
+  const IS_APP = CFG.build === 'pwa';
+  const CAN_SYNC = IS_APP && !!CFG.sbUrl && !!CFG.sbKey;
+  const $ = s => document.querySelector(s);
+  const byId = Object.fromEntries(ACTIVITIES.map(a => [a.id, a]));
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const withName = s => s.replace(/\{name\}/g, BABY.name);
+  const AREA_KEYS = Object.keys(AREAS);
+
+  const sv = (d, extra = '') => `<svg viewBox="0 0 24 24" aria-hidden="true"${extra}>${d}</svg>`;
+  const st = 'fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"';
+  const ICON = {
+    check: sv('<path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>'),
+    plus: sv('<path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>'),
+    close: sv('<path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>'),
+    heart: sv('<path d="M12 20.5C4.5 15.3 2.6 11.3 3.3 8.3 4 5.4 7.6 4 10.2 6c.8.6 1.4 1.4 1.8 2 .4-.6 1-1.4 1.8-2 2.6-2 6.2-.6 6.9 2.3.7 3-1.2 7-8.7 12.2Z" fill="currentColor"/>'),
+    heartO: sv(`<path d="M12 20.5C4.5 15.3 2.6 11.3 3.3 8.3 4 5.4 7.6 4 10.2 6c.8.6 1.4 1.4 1.8 2 .4-.6 1-1.4 1.8-2 2.6-2 6.2-.6 6.9 2.3.7 3-1.2 7-8.7 12.2Z" ${st}/>`),
+    down: sv(`<path d="M7 4h-2.5v10H7M7 14l4.5 6.5c1 .4 2.2-.4 2-1.6L13 15h5.4a2 2 0 0 0 2-2.4l-1.3-6.8A2 2 0 0 0 17.1 4H7Z" ${st}/>`),
+    refresh: sv(`<path d="M4.5 12a7.5 7.5 0 0 1 13-5.1M19.5 12a7.5 7.5 0 0 1-13 5.1M17.5 3.5v3.6h-3.6M6.5 20.5v-3.6h3.6" ${st}/>`),
+    bolt: sv('<path d="M13 2.5 5 13.5h6l-1 8 8-11h-6l1-8Z" fill="currentColor"/>'),
+    gear: sv(`<circle cx="12" cy="12" r="3.2" ${st}/><path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.5 5.5l1.7 1.7M16.8 16.8l1.7 1.7M18.5 5.5l-1.7 1.7M7.2 16.8l-1.7 1.7" ${st}/>`),
+    bag: sv(`<path d="M5 8h14l-1 12.5H6L5 8Z" ${st}/><path d="M9 8V6.5a3 3 0 0 1 6 0V8" ${st}/>`),
+    bell: sv(`<path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15l1.5-2ZM10 20.5a2 2 0 0 0 4 0" ${st}/>`),
+    people: sv(`<circle cx="9" cy="8" r="3.2" ${st}/><path d="M3.5 19.5c.6-3.3 2.8-5.2 5.5-5.2s4.9 1.9 5.5 5.2" ${st}/><circle cx="17" cy="9" r="2.5" ${st}/><path d="M16.5 14.4c2.3.1 3.7 1.8 4.2 4.6" ${st}/>`),
+    copy: sv(`<rect x="8" y="8" width="12" height="12" rx="2.5" ${st}/><path d="M16 5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16" ${st}/>`),
+    cal: sv(`<rect x="3.5" y="5" width="17" height="15.5" rx="3.5" ${st}/><path d="M3.5 10h17M8 3v4M16 3v4" ${st}/>`),
+    trash: sv(`<path d="M5 7h14M9.5 7V5h5v2M7 7l1 13h8l1-13" ${st}/>`),
+    spark: sv('<path d="M12 3l1.8 5.4L19 10l-5.2 1.6L12 17l-1.8-5.4L5 10l5.2-1.6L12 3Z" fill="currentColor"/>')
+  };
+
+  /* ---------- fechas y edad ---------- */
+  const now = () => new Date();
+  const startOfDay = d => new Date(d.getFullYear(), d.getMonth(), d.getDate());
+  const addDays = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
+  function monday(d) { const x = startOfDay(d); x.setDate(x.getDate() - ((x.getDay() + 6) % 7)); return x; }
+  const iso = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  const fromIso = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
+  const weekKeyOf = d => iso(monday(d));
+  const weekKey = () => weekKeyOf(now());
+  const nextWeekKey = () => iso(addDays(monday(now()), 7));
+  const todayIso = () => iso(now());
+  const todayIdx = () => (now().getDay() + 6) % 7;
+  const dateOf = (wk, i) => addDays(fromIso(wk), i);
+  const fmtLong = new Intl.DateTimeFormat('es-PE', { weekday: 'long', day: 'numeric', month: 'long' });
+  const fmtShort = new Intl.DateTimeFormat('es-PE', { day: 'numeric', month: 'short' });
+  const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+  const longDate = d => cap(fmtLong.format(d).replace(',', ''));
+  const shortDate = d => fmtShort.format(d).replace('.', '');
+  const dayName = k => DAYS.find(d => d.k === k).n;
+  const momentName = s => MOMENTS[s].n.toLowerCase();
+  function monthsAt(d) {
+    const b = fromIso(BABY.birth);
+    let m = (d.getFullYear() - b.getFullYear()) * 12 + (d.getMonth() - b.getMonth());
+    if (d.getDate() < b.getDate()) m--;
+    return Math.max(0, m);
+  }
+  const ageNow = () => monthsAt(now());
+  const ageText = () => { const m = ageNow(); return m === 1 ? '1 mes' : `${m} meses`; };
+  const fits = (a, m) => m >= a.age[0] && m <= a.age[1];
+  const weekAge = wk => monthsAt(dateOf(wk, 6));
+  function dayOfYear() { const n = now(); return Math.floor((startOfDay(n) - new Date(n.getFullYear(), 0, 1)) / 864e5); }
+  function ago(t) {
+    if (!t) return 'todavía no';
+    const s = Math.round((Date.now() - t) / 1000);
+    if (s < 60) return 'hace un momento';
+    if (s < 3600) return `hace ${Math.round(s / 60)} min`;
+    if (s < 86400) return `hace ${Math.round(s / 3600)} h`;
+    return `el ${shortDate(new Date(t))}`;
+  }
+
+  /* ---------- estado ---------- */
+  function cleanPlan(p) {
+    const out = {};
+    DAYS.forEach(d => {
+      const row = p && Array.isArray(p[d.k]) ? p[d.k] : [null, null, null];
+      out[d.k] = [0, 1, 2].map(i => (byId[row[i]] ? row[i] : null));
+    });
+    return out;
+  }
+  const obj = v => (v && typeof v === 'object' ? v : {});
+  const normWeek = w => ({
+    plan: cleanPlan(w && w.plan), done: obj(w && w.done), salt: Number.isInteger(w && w.salt) ? w.salt : 0,
+    busy: obj(w && w.busy), mats: obj(w && w.mats), t: (w && w.t) || 0
+  });
+  const fresh = () => ({
+    start: { v: BABY.start, t: 0 }, weeks: {}, ratings: {}, diary: {}, miles: {},
+    family: null, rem: ['08:30', '16:00', '19:30'], lastSync: 0, dirty: false
+  });
+  let state = fresh();
+  try {
+    const raw = localStorage.getItem(KEY);
+    if (raw) {
+      const s = JSON.parse(raw);
+      state = Object.assign(fresh(), s);
+      ['weeks', 'ratings', 'diary', 'miles'].forEach(k => { state[k] = obj(state[k]); });
+      Object.keys(state.weeks).forEach(k => { state.weeks[k] = normWeek(state.weeks[k]); });
+      if (!state.start || !state.start.v) state.start = { v: BABY.start, t: 0 };
+      if (!Array.isArray(state.rem) || state.rem.length !== 3) state.rem = fresh().rem;
+    } else {
+      const old = localStorage.getItem(OLD_KEY);
+      if (old) {
+        const o = JSON.parse(old);
+        Object.keys(obj(o.weeks)).forEach(k => { state.weeks[k] = normWeek(o.weeks[k]); });
+      }
+    }
+  } catch (e) { /* sin almacenamiento: la app funciona igual en esta sesión */ }
+  function persist() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { } }
+  function save() { state.dirty = true; persist(); queueSync(); }
+
+  /* ---------- plan automático ---------- */
+  function rng(seed) {
+    return function () {
+      seed = (seed + 0x6D2B79F5) | 0;
+      let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+  const hashStr = s => { let h = 2166136261; for (const c of s) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; };
+  const weekNum = wk => Math.round(Date.parse(wk + 'T00:00:00Z') / (7 * 864e5));
+  const rating = id => (state.ratings[id] ? state.ratings[id].v : 0);
+
+  function autoPlan(wk, salt) {
+    const r = rng(weekNum(wk) * 31 + salt * 7919 + 17);
+    const months = weekAge(wk);
+    const pools = MOMENTS.map(m => {
+      const keyed = ACTIVITIES
+        .filter(a => m.areas.includes(a.a) && a.id !== SUNDAY_WALK && fits(a, months))
+        .map(a => ({ id: a.id, v: rating(a.id), k: r() + (rating(a.id) === 1 ? 0.45 : 0) + (a.age[0] > 12 && months - a.age[0] <= 1 ? 0.35 : 0) }))
+        .sort((x, y) => y.k - x.k);
+      const liked = keyed.filter(x => x.v !== -1);
+      return (liked.length >= 4 ? liked : keyed).map(x => x.id);
+    });
+    const plan = {};
+    DAYS.forEach((d, i) => {
+      plan[d.k] = MOMENTS.map((m, s) => (s === 0 && d.k === 'dom' ? SUNDAY_WALK : (pools[s].length ? pools[s][i % pools[s].length] : null)));
+    });
+    return plan;
+  }
+  function getWeek(wk, store) {
+    let w = state.weeks[wk];
+    if (w) return w;
+    w = normWeek({ plan: autoPlan(wk, 0) });
+    if (store) {
+      state.weeks[wk] = w;
+      Object.keys(state.weeks).sort().slice(0, -16).forEach(k => delete state.weeks[k]);
+      persist();
+    }
+    return w;
+  }
+  const isCurrentOrPast = wk => wk <= weekKey();
+  function editWeek(wk) { const w = getWeek(wk, true); state.weeks[wk] = w; w.t = Date.now(); return w; }
+
+  /* ---------- días activos, día ocupado, hecho ---------- */
+  const startIso = () => state.start.v;
+  const dayActive = (wk, i) => iso(dateOf(wk, i)) >= startIso();
+  const canMark = (wk, i) => iso(dateOf(wk, i)) <= todayIso() && dayActive(wk, i);
+  const isBusy = (w, day) => !!w.busy[day];
+  function quickId(wk, i, slot) {
+    const months = monthsAt(dateOf(wk, i));
+    const list = QUICK[slot].filter(id => fits(byId[id], months));
+    return list[hashStr(iso(dateOf(wk, i)) + slot) % list.length];
+  }
+  function slotId(wk, w, i, slot) { const d = DAYS[i].k; return isBusy(w, d) ? quickId(wk, i, slot) : w.plan[d][slot]; }
+  const doneKey = (day, slot, q) => `${day}-${slot}${q ? 'q' : ''}`;
+  const isDone = (w, day, slot) => !!w.done[doneKey(day, slot, isBusy(w, day))];
+
+  function weekStats(wk) {
+    const w = getWeek(wk, false);
+    const areas = Object.fromEntries(AREA_KEYS.map(k => [k, { p: 0, d: 0 }]));
+    let planned = 0, done = 0, busyDays = 0;
+    DAYS.forEach((d, i) => {
+      if (!dayActive(wk, i)) return;
+      if (isBusy(w, d.k)) busyDays++;
+      [0, 1, 2].forEach(s => {
+        const id = slotId(wk, w, i, s);
+        if (!id) return;
+        planned++; areas[byId[id].a].p++;
+        if (isDone(w, d.k, s)) { done++; areas[byId[id].a].d++; }
+      });
+    });
+    return { planned, done, areas, busyDays };
+  }
+
+  /* ---------- materiales ---------- */
+  function materialsFor(wk, onlyIdx) {
+    const w = getWeek(wk, false), map = new Map();
+    DAYS.forEach((d, i) => {
+      if (!dayActive(wk, i) || isBusy(w, d.k)) return;
+      if (onlyIdx != null && i !== onlyIdx) return;
+      w.plan[d.k].forEach(id => {
+        if (!id) return;
+        byId[id].mat.forEach(m => {
+          if (/^Ninguno/i.test(m)) return;
+          if (!map.has(m)) map.set(m, []);
+          const uses = map.get(m), label = `${byId[id].n} (${d.n.slice(0, 3).toLowerCase()})`;
+          if (!uses.includes(label)) uses.push(label);
+        });
+      });
+    });
+    return [...map.entries()].map(([m, uses]) => ({ m, uses, have: !!w.mats[m] }));
+  }
+  function matList(wk, items) {
+    if (!items.length) return '<p class="sub">No se necesitan materiales: son juegos solo con tu voz y tus manos.</p>';
+    return `<ul class="mats">${items.map((x, n) => `<li><label class="mat" for="mat-${wk}-${n}">
+      <input type="checkbox" id="mat-${wk}-${n}" data-mat="${esc(x.m)}" data-wk="${wk}"${x.have ? ' checked' : ''}>
+      <span class="box">${ICON.check}</span><span><span class="mat-n">${esc(x.m)}</span><span class="mat-u">Para: ${esc(x.uses.join(', '))}</span></span></label></li>`).join('')}</ul>`;
+  }
+
+  /* ---------- piezas de vista ---------- */
+  const chip = a => `<span class="chip" data-area="${a.a}">${AREAS[a.a].short}</span>`;
+  const ctxData = (wk, day, slot) => `data-wk="${wk}" data-day="${day}" data-slot="${slot}"`;
+  const rateBadge = id => rating(id) === 1 ? `<span class="fav" title="Le encantó">${ICON.heart}</span>` : '';
+  function rateButtons(id, compact) {
+    const v = rating(id);
+    return `<div class="rate${compact ? ' compact' : ''}" role="group" aria-label="¿Le gustó?">
+      ${compact ? '<span class="rate-q">¿Le gustó?</span>' : ''}
+      <button class="btn rate-btn" data-act="rate" data-id="${id}" data-v="1" aria-pressed="${v === 1}">${v === 1 ? ICON.heart : ICON.heartO}Le encantó</button>
+      <button class="btn rate-btn" data-act="rate" data-id="${id}" data-v="-1" aria-pressed="${v === -1}">${ICON.down}No le gustó</button></div>`;
+  }
+  function currentMoment() {
+    const n = now(), mins = n.getHours() * 60 + n.getMinutes();
+    const t = state.rem.map(s => { const [h, m] = s.split(':').map(Number); return h * 60 + m; });
+    let cur = 0; t.forEach((x, i) => { if (mins >= x - 30) cur = i; });
+    return cur;
+  }
+
+  function slotCard(wk, i, s, opts) {
+    const w = getWeek(wk, isCurrentOrPast(wk)), d = DAYS[i], m = MOMENTS[s], id = slotId(wk, w, i, s);
+    const busy = isBusy(w, d.k), mark = canMark(wk, i);
+    const now = opts && opts.now === s ? '<span class="tag">Ahora</span>' : '';
+    if (!id) {
+      return `<li class="slot-card">
+        <button class="tile tile-empty" data-act="pick" ${ctxData(wk, d.k, s)} aria-label="Elegir juego: ${momentName(s)}">${ICON.plus}</button>
+        <div><p class="eyebrow">${m.n} · ${m.d}</p>${now}<h3>Sin juego</h3>
+        <div class="actions"><button class="btn primary" data-act="pick" ${ctxData(wk, d.k, s)}>Elegir juego</button></div></div></li>`;
+    }
+    const a = byId[id], dn = isDone(w, d.k, s);
+    return `<li class="slot-card${dn ? ' is-done' : ''}">
+      <button class="tile" data-area="${a.a}" data-act="open" data-id="${a.id}" ${ctxData(wk, d.k, s)} aria-label="Ver cómo se hace: ${esc(a.n)}">${art(a.id)}${dn ? `<span class="badge">${ICON.check}</span>` : ''}${rateBadge(a.id)}</button>
+      <div><p class="eyebrow">${m.n} · ${busy ? 'Rápido, sin materiales' : m.d}</p>${now}<h3>${esc(a.n)}</h3>
+        <p class="meta">${chip(a)}<span>${busy ? '2 min' : `${a.min} min`}</span></p>
+        <div class="actions">
+          <button class="btn" data-act="open" data-id="${a.id}" ${ctxData(wk, d.k, s)}>Cómo se hace</button>
+          ${mark ? `<button class="btn check" data-act="done" ${ctxData(wk, d.k, s)} aria-pressed="${dn}">${ICON.check}${dn ? 'Hecho' : 'Marcar hecho'}</button>` : ''}
+        </div>
+        ${dn ? rateButtons(a.id, true) : ''}</div></li>`;
+  }
+
+  /* ---------- Hoy ---------- */
+  function viewHoy() {
+    const t = todayIso();
+    if (t < startIso()) return viewBeforeStart();
+    const wk = weekKey(), i = todayIdx(), d = DAYS[i];
+    const w = getWeek(wk, true);
+    const busy = isBusy(w, d.k);
+    let planned = 0, done = 0;
+    [0, 1, 2].forEach(s => { if (slotId(wk, w, i, s)) { planned++; if (isDone(w, d.k, s)) done++; } });
+    const pct = planned ? Math.round((done / planned) * 100) : 0;
+    const sub = planned === 0 ? 'Hoy no hay juegos en el plan. Elige uno abajo.'
+      : done === planned ? `¡Listo! Hicieron ${planned === 1 ? 'el juego' : `los ${planned} juegos`} de hoy. 🎉`
+      : `${done} de ${planned} juegos hechos`;
+    const cur = currentMoment();
+    let summary = '';
+    if (i === 0) {
+      const pk = iso(addDays(fromIso(wk), -7));
+      if (state.weeks[pk]) {
+        const ps = weekStats(pk);
+        if (ps.planned) summary = `<aside class="note-card"><h2>${ICON.spark}La semana pasada</h2>
+          <p>Hicieron <strong>${ps.done} de ${ps.planned}</strong> juegos. ${ps.done >= ps.planned * 0.7 ? '¡Qué buena semana!' : 'Cada juego cuenta, esta semana va otra vez.'}</p>
+          <a class="link" href="#diario">Ver resumen de semanas</a></aside>`;
+      }
+    }
+    return `<section class="hero"><p class="eyebrow">Hoy</p><h1 class="title">${longDate(now())}</h1><p class="sub">${sub}</p>
+      <div class="bar" role="progressbar" aria-label="Juegos hechos hoy" aria-valuemin="0" aria-valuemax="${planned}" aria-valuenow="${done}"><span style="width:${pct}%"${pct === 0 ? ' data-zero' : ''}></span></div>
+      <button class="busy-toggle" data-act="busy" data-wk="${wk}" data-day="${d.k}" aria-pressed="${busy}">
+        <span class="busy-ic">${ICON.bolt}</span><span><strong>Día ocupado</strong><small>${busy ? 'Activado: 3 juegos de 2 minutos sin materiales' : 'Cambia a juegos de 2 minutos sin materiales'}</small></span><span class="switch" aria-hidden="true"></span>
+      </button></section>
+      ${summary}
+      <ul class="list">${[0, 1, 2].map(s => slotCard(wk, i, s, { now: cur })).join('')}</ul>
+      <aside class="tip"><h2>${ICON.heart}Consejo del día</h2><p>${esc(TIPS[dayOfYear() % TIPS.length])}</p></aside>`;
+  }
+
+  function viewBeforeStart() {
+    const sd = fromIso(startIso()), wk = weekKeyOf(sd), i = (sd.getDay() + 6) % 7;
+    const tomorrow = iso(addDays(now(), 1)) === startIso();
+    const when = tomorrow ? 'mañana' : `el ${longDate(sd).toLowerCase()}`;
+    const mats = materialsFor(wk, i);
+    return `<section class="hero"><p class="eyebrow">Hoy · ${longDate(now())}</p>
+      <h1 class="title">El plan empieza ${tomorrow ? 'mañana' : 'pronto'} 🌙</h1>
+      <p class="sub">Hoy descansan. Los juegos empiezan ${when}. Aprovecha para juntar los materiales.</p></section>
+      <h2 class="section-h">Juegos de ${tomorrow ? 'mañana' : longDate(sd).toLowerCase()}</h2>
+      <ul class="list">${[0, 1, 2].map(s => slotCard(wk, i, s)).join('')}</ul>
+      <section class="panel"><h2 class="section-h">${ICON.bag}Materiales para ${tomorrow ? 'mañana' : 'ese día'}</h2>${matList(wk, mats)}
+      <a class="link" href="#semana">Ver la lista de toda la semana</a></section>`;
+  }
+
+  /* ---------- Semana ---------- */
+  let weekView = 'this';
+  function viewSemana() {
+    const wk = weekView === 'next' ? nextWeekKey() : weekKey();
+    const w = getWeek(wk, weekView === 'this');
+    const stats = weekStats(wk), ti = weekView === 'this' ? todayIdx() : -1;
+    const mats = materialsFor(wk), have = mats.filter(x => x.have).length;
+    const months = weekAge(wk);
+    const newGames = ACTIVITIES.filter(a => a.age[0] > 12 && a.age[0] === months);
+    const maxA = Math.max(1, ...AREA_KEYS.map(k => stats.areas[k].p));
+
+    const resumen = `<section class="panel resumen" aria-label="Resumen de la semana">
+      <div class="res-top"><div><p class="eyebrow">${weekView === 'this' ? 'Resumen de la semana' : 'Lo que viene'}</p>
+        <p class="big"><strong>${weekView === 'this' ? stats.done : stats.planned}</strong>${weekView === 'this' ? ` de ${stats.planned} juegos hechos` : ' juegos planeados'}</p></div>
+        <button class="btn" data-act="mats" data-wk="${wk}">${ICON.bag}Materiales <b>${have}/${mats.length}</b></button></div>
+      <ul class="area-bars">${AREA_KEYS.map(k => {
+        const a = stats.areas[k];
+        return `<li data-area="${k}"><span class="ab-n">${AREAS[k].short}</span><span class="ab-track"><span class="ab-p" style="width:${(a.p / maxA) * 100}%"><span class="ab-d" style="width:${a.p ? (a.d / a.p) * 100 : 0}%"></span></span></span><span class="ab-v">${weekView === 'this' ? `${a.d}/${a.p}` : a.p}</span></li>`;
+      }).join('')}</ul>
+      ${newGames.length ? `<p class="new-note">${ICON.spark}<span>Cumple ${months} meses: se activan ${newGames.length} juegos nuevos.</span></p>` : ''}
+    </section>`;
+
+    const days = DAYS.map((d, i) => {
+      const date = dateOf(wk, i), active = dayActive(wk, i), busy = isBusy(w, d.k);
+      if (!active) {
+        return `<li class="day is-off"><div class="day-head"><h2>${d.n}</h2><span class="date">${shortDate(date)}</span>${i === ti ? '<span class="tag">Hoy</span>' : ''}</div>
+          <p class="off">El plan empieza el ${longDate(fromIso(startIso())).toLowerCase()}.</p></li>`;
+      }
+      let pl = 0, dd = 0;
+      const slots = MOMENTS.map((m, s) => {
+        const id = slotId(wk, w, i, s);
+        if (!id) {
+          return `<button class="mini empty" data-act="pick" ${ctxData(wk, d.k, s)} aria-label="${d.n}, ${momentName(s)}: elegir juego">
+            <span class="tile">${ICON.plus}</span><span class="mini-m">${m.s}</span><span class="mini-n">Elegir juego</span></button>`;
+        }
+        pl++;
+        const a = byId[id], dn = isDone(w, d.k, s); if (dn) dd++;
+        return `<button class="mini" data-act="open" data-id="${id}" ${ctxData(wk, d.k, s)} aria-label="${d.n}, ${momentName(s)}: ${esc(a.n)}${dn ? ', hecho' : ''}">
+          <span class="tile" data-area="${a.a}">${art(id)}${dn ? `<span class="badge">${ICON.check}</span>` : ''}${rateBadge(id)}</span>
+          <span class="mini-m">${m.s}</span><span class="mini-n">${esc(a.n)}</span></button>`;
+      }).join('');
+      return `<li class="day${i === ti ? ' is-today' : ''}">
+        <div class="day-head"><h2>${d.n}</h2><span class="date">${shortDate(date)}</span>${i === ti ? '<span class="tag">Hoy</span>' : ''}${busy ? `<span class="tag busy">${ICON.bolt}Ocupado</span>` : ''}<span class="count">${dd}/${pl}</span></div>
+        <div class="slots">${slots}</div></li>`;
+    }).join('');
+
+    return `<section class="hero"><p class="eyebrow">Del ${shortDate(dateOf(wk, 0))} al ${shortDate(dateOf(wk, 6))}</p><h1 class="title">Plan de la semana</h1>
+      <div class="seg" role="tablist" aria-label="Semana">
+        <button role="tab" data-act="weekview" data-v="this" aria-selected="${weekView === 'this'}">Esta semana</button>
+        <button role="tab" data-act="weekview" data-v="next" aria-selected="${weekView === 'next'}">Próxima semana</button></div>
+      <p class="sub">${weekView === 'this' ? 'Cada lunes llega un plan nuevo. Toca un juego para verlo, cambiarlo o marcarlo.' : 'Así viene la próxima semana. Revisa los materiales y cambia lo que quieras.'}</p></section>
+      ${resumen}
+      <ol class="days">${days}</ol>
+      <div class="week-actions">
+        <button class="btn" data-act="shuffle" data-wk="${wk}">${ICON.refresh}Proponer otro plan</button>
+        <button class="btn" data-act="reset" data-wk="${wk}">Volver al plan sugerido</button>
+        <button class="btn" data-act="clear" data-wk="${wk}">Vaciar semana</button>
+      </div>`;
+  }
+
+  /* ---------- Juegos ---------- */
+  let filter = 'all';
+  function card(a, months) {
+    const later = months < a.age[0];
+    const isNew = !later && a.age[0] > 12 && months - a.age[0] <= 1;
+    return `<li><button class="card${later ? ' is-later' : ''}" data-act="open" data-id="${a.id}">
+      <span class="tile" data-area="${a.a}">${art(a.id)}${rateBadge(a.id)}${isNew ? '<span class="tag new">Nuevo</span>' : ''}</span>
+      <span class="card-n">${esc(a.n)}</span>
+      <span class="card-meta" data-area="${a.a}"><i class="dot"></i>${later ? `Desde los ${a.age[0]} meses` : `${AREAS[a.a].short} · ${a.min} min`}</span></button></li>`;
+  }
+  function viewJuegos() {
+    const months = ageNow();
+    const match = a => filter === 'all' || (filter === 'fav' ? rating(a.id) === 1 : a.a === filter);
+    const now = ACTIVITIES.filter(a => match(a) && fits(a, months));
+    const later = ACTIVITIES.filter(a => match(a) && months < a.age[0]);
+    const chips = [['all', 'Todos'], ['fav', 'Le encantan']].concat(AREA_KEYS.map(k => [k, AREAS[k].short]))
+      .map(([k, l]) => `<button class="fchip"${AREAS[k] ? ` data-area="${k}"` : ''} data-act="filter" data-f="${k}" aria-pressed="${filter === k}">${k === 'fav' ? ICON.heart : ''}${l}</button>`).join('');
+    return `<section class="hero"><p class="eyebrow">${ACTIVITIES.filter(a => fits(a, months)).length} juegos para sus ${months} meses</p><h1 class="title">Juegos</h1>
+      <p class="sub">Toca un juego para ver cómo se hace y agregarlo al plan. Los juegos nuevos se activan solos según su edad.</p></section>
+      <div class="filters" role="group" aria-label="Filtrar">${chips}</div>
+      ${now.length ? `<ul class="grid">${now.map(a => card(a, months)).join('')}</ul>` : `<p class="empty-msg">${filter === 'fav' ? 'Todavía no hay favoritos. Marca "Le encantó" en un juego después de hacerlo.' : 'No hay juegos en este grupo.'}</p>`}
+      ${later.length ? `<h2 class="section-h">Se activan más adelante</h2><ul class="grid">${later.map(a => card(a, months)).join('')}</ul>` : ''}`;
+  }
+
+  /* ---------- Diario ---------- */
+  let mileGroup = null;
+  function viewDiario() {
+    const months = ageNow();
+    const groups = Object.keys(MILESTONES).map(Number);
+    if (mileGroup == null) mileGroup = groups.filter(g => g <= months).pop() || groups[0];
+    const list = MILESTONES[mileGroup];
+    const got = list.filter((_, n) => state.miles[`${mileGroup}-${n}`] && state.miles[`${mileGroup}-${n}`].d).length;
+    const entries = Object.entries(state.diary).filter(([, e]) => !e.del).sort((a, b) => (b[1].date + b[1].t).localeCompare(a[1].date + a[1].t));
+    const weeks = Object.keys(state.weeks).filter(k => k <= weekKey()).sort().reverse()
+      .map(k => ({ k, s: weekStats(k) })).filter(x => x.s.planned);
+
+    return `<section class="hero"><p class="eyebrow">${ageText()}</p><h1 class="title">Diario de ${BABY.name}</h1>
+      <p class="sub">Sus logros, sus primeras veces y cómo van las semanas.</p></section>
+
+      <section class="panel"><h2 class="section-h">${ICON.spark}Anotar un logro</h2>
+        <form id="diary-form" class="diary-form">
+          <label class="field" for="diary-text"><span>¿Qué pasó?</span>
+            <textarea id="diary-text" rows="2" maxlength="280" placeholder="Hoy dio 3 pasitos sola" required></textarea></label>
+          <div class="row"><label class="field" for="diary-date"><span>Fecha</span><input type="date" id="diary-date" value="${todayIso()}" max="${todayIso()}" required></label>
+          <button class="btn primary" type="submit">${ICON.plus}Guardar</button></div>
+        </form>
+        ${entries.length ? `<ul class="entries">${entries.map(([id, e]) => `<li><span class="e-date">${shortDate(fromIso(e.date))}</span><p>${esc(e.text)}</p>
+          <button class="icon-btn" data-act="del-entry" data-id="${id}" aria-label="Borrar: ${esc(e.text)}">${ICON.trash}</button></li>`).join('')}</ul>`
+          : '<p class="empty-msg">Aquí aparecerán sus primeras veces: su primera palabra, sus primeros pasos…</p>'}
+      </section>
+
+      <section class="panel"><h2 class="section-h">${ICON.check}Hitos del desarrollo</h2>
+        <div class="seg small" role="tablist" aria-label="Edad">${groups.map(g => `<button role="tab" data-act="milegroup" data-g="${g}" aria-selected="${g === mileGroup}">${g} meses</button>`).join('')}</div>
+        <p class="sub">${got} de ${list.length} logrados. Lo que la mayoría de bebés ya hace a los ${mileGroup} meses, según los CDC. Cada bebé tiene su ritmo.</p>
+        <ul class="miles">${list.map(([area, text], n) => {
+          const key = `${mileGroup}-${n}`, m = state.miles[key], ok = m && m.d;
+          return `<li><label class="mile" for="mile-${key}" data-area="${area}"><input type="checkbox" id="mile-${key}" data-mile="${key}"${ok ? ' checked' : ''}>
+            <span class="box">${ICON.check}</span><span class="mile-t">${esc(text)}${ok ? `<small>Logrado el ${shortDate(fromIso(m.d))}</small>` : ''}</span><i class="dot"></i></label></li>`;
+        }).join('')}</ul>
+        <p class="hint">Si no logra algunos de estos hitos o pierde algo que ya hacía, coméntalo en su control de crecimiento (CRED) o con su pediatra.</p>
+      </section>
+
+      <section class="panel"><h2 class="section-h">${ICON.cal}Semanas</h2>
+        ${weeks.length ? `<ul class="weeks">${weeks.map(({ k, s }) => {
+          const p = Math.round((s.done / s.planned) * 100);
+          return `<li><span class="w-n">${k === weekKey() ? 'Esta semana' : `Semana del ${shortDate(fromIso(k))}`}</span><span class="w-bar"><span style="width:${p}%"></span></span><span class="w-v">${s.done}/${s.planned}</span></li>`;
+        }).join('')}</ul>` : '<p class="empty-msg">Cuando empiecen los juegos, aquí verás cuántos hicieron cada semana.</p>'}
+      </section>`;
+  }
+
+  /* ---------- hojas ---------- */
+  function sheetHead(eyebrow) {
+    return `<div class="grab" aria-hidden="true"></div><div class="sheet-head"><p class="eyebrow">${eyebrow}</p>
+      <button class="x" data-act="close" aria-label="Cerrar">${ICON.close}</button></div>`;
+  }
+  function adderForm(a) {
+    const ds = Math.max(0, MOMENTS.findIndex(m => m.areas.includes(a.a)));
+    const opts = (wk, label) => DAYS.map((d, i) => dayActive(wk, i) && iso(dateOf(wk, i)) >= todayIso()
+      ? `<label class="opt"><input type="radio" name="day" value="${wk}|${d.k}" id="ad-${wk}-${d.k}"><span>${d.n.slice(0, 3)} ${dateOf(wk, i).getDate()}</span></label>` : '').join('');
+    return `<form class="adder" id="adder" data-id="${a.id}" hidden>
+      <fieldset><legend>Esta semana</legend><div class="opts">${opts(weekKey()) || '<span class="hint">No quedan días esta semana.</span>'}</div></fieldset>
+      <fieldset><legend>Próxima semana</legend><div class="opts">${opts(nextWeekKey())}</div></fieldset>
+      <fieldset><legend>Momento</legend><div class="opts">${MOMENTS.map((m, s) => `<label class="opt"><input type="radio" name="slot" value="${s}" id="ad-s${s}"${s === ds ? ' checked' : ''}><span>${m.n}</span></label>`).join('')}</div></fieldset>
+      <p class="hint" id="adder-hint" aria-live="polite">Elige un día.</p>
+      <div><button class="btn primary" type="submit">${ICON.check}Guardar en el plan</button></div></form>`;
+  }
+  function detailHTML(a, ctx) {
+    let actions, eyebrow = `Juego ${a.id} de ${ACTIVITIES.length}`;
+    if (ctx) {
+      const w = getWeek(ctx.wk, false), i = DAYS.findIndex(d => d.k === ctx.day), busy = isBusy(w, ctx.day);
+      const dn = isDone(w, ctx.day, ctx.slot), mark = canMark(ctx.wk, i);
+      eyebrow = `${dayName(ctx.day)} ${dateOf(ctx.wk, i).getDate()} · ${MOMENTS[ctx.slot].n}`;
+      actions = `<div class="actions">
+        ${mark ? `<button class="btn check" data-act="done" ${ctxData(ctx.wk, ctx.day, ctx.slot)} aria-pressed="${dn}">${ICON.check}${dn ? 'Hecho' : 'Marcar hecho'}</button>` : ''}
+        ${busy ? '' : `<button class="btn" data-act="pick" ${ctxData(ctx.wk, ctx.day, ctx.slot)}>Cambiar juego</button>
+        <button class="btn" data-act="remove" ${ctxData(ctx.wk, ctx.day, ctx.slot)}>Quitar</button>`}</div>`;
+    } else {
+      actions = `<div class="actions"><button class="btn primary" data-act="adder" aria-expanded="false" aria-controls="adder">${ICON.plus}Agregar al plan</button></div>${adderForm(a)}`;
+    }
+    const months = ageNow();
+    const ageNote = months < a.age[0] ? `<p class="note">Este juego se activa a los ${a.age[0]} meses. Puedes probarlo antes si ves que ya está lista.</p>` : '';
+    const note = a.care ? `<p class="note care"><strong>Cuidado:</strong> ${esc(a.care)}</p>` : `<p class="note"><strong>Consejo:</strong> ${esc(withName(a.tip || ''))}</p>`;
+    return `${sheetHead(eyebrow)}
+      <div class="tile hero-art" data-area="${a.a}">${art(a.id)}</div>
+      <h2 id="sheet-title">${esc(a.n)}</h2>
+      <p class="meta">${chip(a)}<span>${AREAS[a.a].full} · ${a.min} min${a.age[0] > 12 ? ` · desde ${a.age[0]} meses` : ''}</span></p>
+      ${actions}${ageNote}
+      ${rateButtons(a.id, false)}
+      <section class="sec"><h3>Beneficios</h3><ul class="benefits">${a.ben.map(b => `<li>${ICON.heart}<span>${esc(b)}</span></li>`).join('')}</ul></section>
+      <section class="sec"><h3>Materiales</h3><ul class="materials">${a.mat.map(m => `<li>${esc(m)}</li>`).join('')}</ul></section>
+      <section class="sec"><h3>Cómo se hace</h3><ol class="steps">${a.steps.map(s => `<li><span>${esc(withName(s))}</span></li>`).join('')}</ol></section>
+      ${note}`;
+  }
+
+  let pickFilter = 'sug';
+  function pickerHTML(wk, day, slot) {
+    const m = MOMENTS[slot], cur = getWeek(wk, false).plan[day][slot], months = weekAge(wk);
+    const base = ACTIVITIES.filter(a => fits(a, months));
+    const list = pickFilter === 'sug' ? base.filter(a => m.areas.includes(a.a))
+      : pickFilter === 'all' ? base : pickFilter === 'fav' ? base.filter(a => rating(a.id) === 1) : base.filter(a => a.a === pickFilter);
+    const opts = [['sug', 'Sugeridos'], ['all', 'Todos'], ['fav', 'Le encantan']].concat(AREA_KEYS.map(k => [k, AREAS[k].short]));
+    const chips = opts.map(([k, l]) => `<button class="fchip"${AREAS[k] ? ` data-area="${k}"` : ''} data-act="pfilter" data-f="${k}" aria-pressed="${pickFilter === k}">${l}</button>`).join('');
+    const rows = list.map(a => `<li><button data-act="assign" data-id="${a.id}" ${ctxData(wk, day, slot)}${a.id === cur ? ' aria-current="true"' : ''}>
+        <span class="tile" data-area="${a.a}">${art(a.id)}</span>
+        <span><span class="pick-n">${esc(a.n)}${rating(a.id) === 1 ? ' ❤️' : ''}</span><span class="pick-a">${AREAS[a.a].short} · ${a.min} min${rating(a.id) === -1 ? ' · no le gustó' : ''}</span></span>
+        ${a.id === cur ? '<span class="tag">Actual</span>' : ''}</button></li>`).join('');
+    return `${sheetHead(`${dayName(day)} · ${m.n}`)}
+      <h2 id="sheet-title">Elegir juego</h2>
+      <p class="sub">Sugeridos ${momentName(slot)}: ${m.d.toLowerCase()}.</p>
+      <div class="filters" role="group" aria-label="Filtrar juegos">${chips}</div>
+      ${list.length ? `<ul class="pick">${rows}</ul>` : '<p class="empty-msg">No hay juegos en este grupo.</p>'}`;
+  }
+
+  function matsHTML(wk) {
+    const items = materialsFor(wk), have = items.filter(x => x.have).length;
+    return `${sheetHead(`Del ${shortDate(dateOf(wk, 0))} al ${shortDate(dateOf(wk, 6))}`)}
+      <h2 id="sheet-title">Materiales de la semana</h2>
+      <p class="sub">${have} de ${items.length} listos. Marca lo que ya tienes en casa.</p>
+      ${matList(wk, items)}`;
+  }
+
+  function settingsHTML() {
+    let share;
+    if (!CAN_SYNC) {
+      share = `<p class="sub">Para compartir el plan con tu familia, usa la app instalada en tu celular (la versión de GitHub Pages). Aquí, en la vista previa, no se puede conectar a internet.</p>`;
+    } else if (state.family) {
+      share = `<p class="sub">Comparte este código con tu familia. En su celular: Ajustes → Compartir → Unirme con un código.</p>
+        <div class="code-box"><span class="code" id="fam-code">${esc(state.family)}</span>
+        <button class="btn" data-act="copy-code">${ICON.copy}Copiar</button></div>
+        <p class="sync-line" id="sync-line">${syncText()}</p>
+        <div class="actions"><button class="btn" data-act="sync-now">${ICON.refresh}Sincronizar ahora</button>
+        <button class="btn" data-act="leave">Dejar de compartir</button></div>`;
+    } else {
+      share = `<p class="sub">Así los dos ven el mismo plan, los juegos hechos, los favoritos y el diario desde su propio celular.</p>
+        <div class="actions"><button class="btn primary" data-act="create-family">${ICON.people}Crear código familiar</button></div>
+        <form id="join-form" class="join"><label class="field" for="join-code"><span>¿Ya tienen un código?</span>
+          <input id="join-code" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="AIUNI-XXXX-XXXX" maxlength="15" required></label>
+          <button class="btn" type="submit">Unirme</button></form>
+        <p class="hint" id="join-msg" aria-live="polite"></p>`;
+    }
+    return `${sheetHead('Ajustes')}
+      <h2 id="sheet-title">Ajustes</h2>
+      <section class="sec"><h3>${ICON.people} Compartir con tu familia</h3>${share}</section>
+      <section class="sec"><h3>${ICON.bell} Recordatorios</h3>
+        <p class="sub">Elige a qué hora suele ser cada momento. La app marca "Ahora" en el juego que toca.</p>
+        <div class="times">${MOMENTS.map((m, s) => `<label class="field" for="rem-${s}"><span>${m.n}</span><input type="time" id="rem-${s}" data-rem="${s}" value="${state.rem[s]}"></label>`).join('')}</div>
+        ${IS_APP ? `<div class="actions"><button class="btn primary" data-act="ics">${ICON.cal}Agregar avisos a mi calendario</button></div>
+          <p class="hint">Se descarga un archivo con 3 avisos diarios. Ábrelo y tu celular te pregunta si quieres agregarlos al calendario. En iPhone, hazlo desde Safari. Si cambias las horas, vuelve a agregarlos y borra los anteriores.</p>`
+          : '<p class="hint">Los avisos en el calendario se agregan desde la app instalada en tu celular.</p>'}
+      </section>
+      <section class="sec"><h3>${ICON.cal} Inicio del plan</h3>
+        <label class="field" for="start-date"><span>Los juegos empiezan el</span><input type="date" id="start-date" value="${startIso()}"></label>
+      </section>`;
+  }
+
+  /* ---------- render ---------- */
+  const VIEWS = { hoy: viewHoy, semana: viewSemana, juegos: viewJuegos, diario: viewDiario };
+  const current = () => (VIEWS[location.hash.slice(1)] ? location.hash.slice(1) : 'hoy');
+  function render() {
+    const v = current();
+    const y = window.scrollY;
+    $('#view').innerHTML = VIEWS[v]();
+    window.scrollTo(0, y);
+    document.querySelectorAll('.tab').forEach(t => {
+      if (t.dataset.view === v) t.setAttribute('aria-current', 'page'); else t.removeAttribute('aria-current');
+    });
+    $('#age').textContent = ageText();
+  }
+
+  let lastFocus = null, sheetCtx = null;
+  function sheetBody() {
+    if (!sheetCtx) return '';
+    switch (sheetCtx.type) {
+      case 'pick': return pickerHTML(sheetCtx.wk, sheetCtx.day, sheetCtx.slot);
+      case 'mats': return matsHTML(sheetCtx.wk);
+      case 'settings': return settingsHTML();
+      default: return detailHTML(byId[sheetCtx.id], sheetCtx.ctx);
+    }
+  }
+  function openSheet(ctx) {
+    if ($('#sheet').hidden) lastFocus = document.activeElement;
+    sheetCtx = ctx;
+    const sh = $('#sheet');
+    sh.innerHTML = sheetBody();
+    sh.hidden = false; $('#scrim').hidden = false;
+    document.body.classList.add('locked');
+    sh.scrollTop = 0;
+    const x = sh.querySelector('.x'); if (x) x.focus({ preventScroll: true });
+  }
+  function refreshSheet(focusSel) {
+    if (!sheetCtx) return;
+    const sh = $('#sheet'), top = sh.scrollTop;
+    const adderOpen = sh.querySelector('#adder:not([hidden])');
+    sh.innerHTML = sheetBody();
+    if (adderOpen) { const f = sh.querySelector('#adder'); if (f) { f.hidden = false; const b = sh.querySelector('[data-act="adder"]'); if (b) b.setAttribute('aria-expanded', 'true'); } }
+    sh.scrollTop = top;
+    const f = focusSel && sh.querySelector(focusSel); if (f) f.focus({ preventScroll: true });
+  }
+  function closeSheet() {
+    $('#sheet').hidden = true; $('#scrim').hidden = true;
+    document.body.classList.remove('locked');
+    sheetCtx = null;
+    if (lastFocus && document.contains(lastFocus)) lastFocus.focus({ preventScroll: true });
+  }
+
+  let toastTimer;
+  function toast(msg) {
+    const t = $('#toast');
+    t.textContent = msg; t.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove('show'), 2600);
+  }
+  const armedBtns = {};
+  function armed(btn, key, fn) {
+    if (armedBtns[key]) { clearTimeout(armedBtns[key]); delete armedBtns[key]; fn(); return; }
+    const original = btn.innerHTML;
+    btn.textContent = 'Toca otra vez para confirmar';
+    btn.classList.add('warn');
+    armedBtns[key] = setTimeout(() => { btn.innerHTML = original; btn.classList.remove('warn'); delete armedBtns[key]; }, 3500);
+  }
+
+  function updateHint() {
+    const f = $('#adder'); if (!f) return;
+    const dv = f.elements.day.value, slot = +f.elements.slot.value;
+    if (!dv) { $('#adder-hint').textContent = 'Elige un día.'; return; }
+    const [wk, day] = dv.split('|'), cur = getWeek(wk, false).plan[day][slot];
+    $('#adder-hint').textContent = !cur ? 'Ese espacio está libre.' : cur === +f.dataset.id ? 'Ya está en ese lugar del plan.' : `Reemplazará a: ${byId[cur].n}`;
+  }
+
+  /* ---------- recordatorios en el calendario ---------- */
+  function downloadIcs() {
+    const pad = n => String(n).padStart(2, '0');
+    const d = new Date(), stamp = `${d.getUTCFullYear()}${pad(d.getUTCMonth() + 1)}${pad(d.getUTCDate())}T${pad(d.getUTCHours())}${pad(d.getUTCMinutes())}00Z`;
+    const first = (startIso() > todayIso() ? startIso() : todayIso()).replace(/-/g, '');
+    const ev = MOMENTS.map((m, s) => [
+      'BEGIN:VEVENT', `UID:aiuni-juega-${m.k}-${hashStr(state.rem[s])}@aiuni-juega`, `DTSTAMP:${stamp}`,
+      `DTSTART:${first}T${state.rem[s].replace(':', '')}00`, 'DURATION:PT15M', 'RRULE:FREQ=DAILY',
+      `SUMMARY:${BABY.name} Juega: ${m.n}`, `DESCRIPTION:Hora del juego (${m.d.toLowerCase()}). Abre la app para ver cuál toca hoy.`,
+      'BEGIN:VALARM', 'ACTION:DISPLAY', 'TRIGGER:PT0M', `DESCRIPTION:${BABY.name} Juega: ${m.n}`, 'END:VALARM', 'END:VEVENT'
+    ].join('\r\n')).join('\r\n');
+    const ics = `BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Aiuni Juega//ES\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\n${ev}\r\nEND:VCALENDAR\r\n`;
+    const url = URL.createObjectURL(new Blob([ics], { type: 'text/calendar;charset=utf-8' }));
+    const a = document.createElement('a');
+    a.href = url; a.download = 'aiuni-juega-avisos.ics';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
+    toast('Abre el archivo para agregar los avisos');
+  }
+
+  /* ---------- compartir (sincronización) ---------- */
+  let syncing = false, syncErr = '', syncTimer = null;
+  function syncText() {
+    if (syncing) return 'Sincronizando…';
+    if (syncErr) return syncErr;
+    return `Sincronizado ${ago(state.lastSync)}.`;
+  }
+  function showSync() { const el = $('#sync-line'); if (el) el.textContent = syncText(); }
+  async function rpc(fn, body) {
+    const r = await fetch(`${CFG.sbUrl}/rest/v1/rpc/${fn}`, {
+      method: 'POST',
+      headers: { apikey: CFG.sbKey, Authorization: `Bearer ${CFG.sbKey}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    });
+    if (!r.ok) throw new Error(`${r.status}`);
+    const txt = await r.text();
+    return txt ? JSON.parse(txt) : null;
+  }
+  const shared = () => ({ start: state.start, weeks: state.weeks, ratings: state.ratings, diary: state.diary, miles: state.miles });
+  const MAPS = ['weeks', 'ratings', 'diary', 'miles'];
+  function merge(remote) {
+    if (!remote) return false;
+    let changed = false;
+    if (remote.start && remote.start.v && (remote.start.t || 0) > (state.start.t || 0)) { state.start = remote.start; changed = true; }
+    MAPS.forEach(name => {
+      const rm = obj(remote[name]);
+      Object.keys(rm).forEach(k => {
+        const loc = state[name][k], rem = rm[k];
+        if (!rem) return;
+        if (!loc || (rem.t || 0) > (loc.t || 0)) { state[name][k] = name === 'weeks' ? normWeek(rem) : rem; changed = true; }
+      });
+    });
+    return changed;
+  }
+  function localAhead(remote) {
+    if (!remote) return true;
+    if ((state.start.t || 0) > ((remote.start && remote.start.t) || 0)) return true;
+    return MAPS.some(name => {
+      const rm = obj(remote[name]);
+      return Object.keys(state[name]).some(k => { const l = state[name][k]; return (l.t || 0) > 0 && (!rm[k] || (l.t || 0) > (rm[k].t || 0)); });
+    });
+  }
+  async function sync() {
+    if (!CAN_SYNC || !state.family || syncing || !navigator.onLine) return;
+    syncing = true; syncErr = ''; showSync();
+    try {
+      const res = await rpc('aiuni_juega_leer', { p_codigo: state.family });
+      const remote = res && res.datos;
+      const changed = merge(remote);
+      if (localAhead(remote)) await rpc('aiuni_juega_guardar', { p_codigo: state.family, p_datos: shared() });
+      state.dirty = false; state.lastSync = Date.now(); persist();
+      if (changed) { render(); if (sheetCtx && sheetCtx.type !== 'settings') refreshSheet(); }
+    } catch (e) {
+      syncErr = 'No se pudo sincronizar. Se intentará de nuevo cuando haya internet.';
+    } finally { syncing = false; showSync(); }
+  }
+  function queueSync() { if (!CAN_SYNC || !state.family) return; clearTimeout(syncTimer); syncTimer = setTimeout(sync, 1500); }
+  function newCode() {
+    const abc = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789', b = new Uint8Array(8);
+    crypto.getRandomValues(b);
+    const s = [...b].map(x => abc[x % abc.length]).join('');
+    return `AIUNI-${s.slice(0, 4)}-${s.slice(4)}`;
+  }
+  const normCode = s => s.toUpperCase().replace(/[^A-Z0-9]/g, '').replace(/^AIUNI/, '').replace(/^(.{4})(.{4}).*$/, 'AIUNI-$1-$2');
+
+  /* ---------- eventos ---------- */
+  document.addEventListener('click', e => {
+    const b = e.target.closest('[data-act]'); if (!b) return;
+    const act = b.dataset.act, id = +b.dataset.id, wk = b.dataset.wk, day = b.dataset.day;
+    const slot = b.dataset.slot != null ? +b.dataset.slot : null;
+    switch (act) {
+      case 'open':
+        openSheet({ type: 'detail', id, ctx: wk ? { wk, day, slot } : null });
+        break;
+      case 'pick':
+        pickFilter = 'sug';
+        openSheet({ type: 'pick', wk, day, slot });
+        break;
+      case 'pfilter':
+        pickFilter = b.dataset.f; refreshSheet(`[data-act="pfilter"][data-f="${pickFilter}"]`);
+        break;
+      case 'assign': {
+        const w = editWeek(wk);
+        w.plan[day][slot] = id; delete w.done[doneKey(day, slot, false)];
+        save(); closeSheet(); render();
+        toast(`${byId[id].n}: ${dayName(day).toLowerCase()}, ${momentName(slot)}`);
+        break;
+      }
+      case 'remove': {
+        const w = editWeek(wk);
+        w.plan[day][slot] = null; delete w.done[doneKey(day, slot, false)];
+        save(); closeSheet(); render(); toast('Juego quitado del plan');
+        break;
+      }
+      case 'done': {
+        const w = editWeek(wk), k = doneKey(day, slot, isBusy(w, day)), v = !w.done[k];
+        if (v) w.done[k] = true; else delete w.done[k];
+        save(); render();
+        if (sheetCtx) refreshSheet('[data-act="done"]');
+        toast(v ? '¡Bien hecho! 🎉 ¿Le gustó?' : 'Marcado como pendiente');
+        break;
+      }
+      case 'rate': {
+        const v = +b.dataset.v, nv = rating(id) === v ? 0 : v;
+        state.ratings[id] = { v: nv, t: Date.now() };
+        save(); render(); if (sheetCtx) refreshSheet(`[data-act="rate"][data-v="${v}"]`);
+        toast(nv === 1 ? 'Guardado: le encantó ❤️. Saldrá más seguido.' : nv === -1 ? 'Guardado: casi no saldrá en los próximos planes.' : 'Calificación quitada');
+        break;
+      }
+      case 'busy': {
+        const w = editWeek(wk), v = !w.busy[day];
+        if (v) w.busy[day] = true; else delete w.busy[day];
+        save(); render(); toast(v ? 'Día ocupado: juegos de 2 minutos ⚡' : 'Volviste a los juegos del plan');
+        break;
+      }
+      case 'adder': {
+        const f = $('#adder'); f.hidden = !f.hidden;
+        b.setAttribute('aria-expanded', String(!f.hidden));
+        if (!f.hidden) { updateHint(); f.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }
+        break;
+      }
+      case 'filter':
+        filter = b.dataset.f; render();
+        { const f = document.querySelector(`[data-act="filter"][data-f="${filter}"]`); if (f) f.focus({ preventScroll: true }); }
+        break;
+      case 'weekview':
+        weekView = b.dataset.v; render();
+        break;
+      case 'mats':
+        openSheet({ type: 'mats', wk });
+        break;
+      case 'milegroup':
+        mileGroup = +b.dataset.g; render();
+        break;
+      case 'del-entry':
+        armed(b, 'del-' + b.dataset.id, () => { state.diary[b.dataset.id] = { del: true, t: Date.now() }; save(); render(); toast('Logro borrado'); });
+        break;
+      case 'shuffle':
+        armed(b, 'shuffle', () => { const w = editWeek(wk); w.salt += 1; w.plan = autoPlan(wk, w.salt); w.done = {}; save(); render(); toast('Listo, aquí tienes otro plan'); });
+        break;
+      case 'reset':
+        armed(b, 'reset', () => { const w = editWeek(wk); w.salt = 0; w.plan = autoPlan(wk, 0); w.done = {}; w.busy = {}; save(); render(); toast('Volviste al plan sugerido'); });
+        break;
+      case 'clear':
+        armed(b, 'clear', () => { const w = editWeek(wk); DAYS.forEach(d => { w.plan[d.k] = [null, null, null]; }); w.done = {}; w.busy = {}; save(); render(); toast('Semana vacía. Toca + para elegir juegos'); });
+        break;
+      case 'settings':
+        openSheet({ type: 'settings' });
+        break;
+      case 'ics':
+        downloadIcs();
+        break;
+      case 'create-family':
+        state.family = newCode(); state.dirty = true; persist(); refreshSheet('[data-act="copy-code"]'); sync();
+        toast('Código creado. Compártelo con tu familia');
+        break;
+      case 'copy-code': {
+        const code = state.family;
+        const fallback = () => { const r = document.createRange(); r.selectNodeContents($('#fam-code')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); toast('Código seleccionado: cópialo'); };
+        if (navigator.clipboard) navigator.clipboard.writeText(code).then(() => toast('Código copiado'), fallback); else fallback();
+        break;
+      }
+      case 'sync-now':
+        sync();
+        break;
+      case 'leave':
+        armed(b, 'leave', () => { state.family = null; persist(); refreshSheet(); toast('Dejaste de compartir. Tus datos siguen en este celular'); });
+        break;
+      case 'close':
+        closeSheet();
+        break;
+    }
+  });
+
+  document.addEventListener('change', e => {
+    const t = e.target;
+    if (t.closest('#adder')) { updateHint(); return; }
+    if (t.dataset.mat) {
+      const w = editWeek(t.dataset.wk);
+      if (t.checked) w.mats[t.dataset.mat] = true; else delete w.mats[t.dataset.mat];
+      save();
+      if (sheetCtx && sheetCtx.type === 'mats') { const p = $('#sheet .sub'); const it = materialsFor(t.dataset.wk); if (p) p.textContent = `${it.filter(x => x.have).length} de ${it.length} listos. Marca lo que ya tienes en casa.`; }
+      if (current() === 'semana' && !sheetCtx) render();
+      return;
+    }
+    if (t.dataset.mile) {
+      state.miles[t.dataset.mile] = { d: t.checked ? todayIso() : null, t: Date.now() };
+      save(); render();
+      if (t.checked) toast('¡Qué emoción! Logro guardado 🎉');
+      return;
+    }
+    if (t.dataset.rem != null) {
+      if (/^\d\d:\d\d$/.test(t.value)) { state.rem[+t.dataset.rem] = t.value; persist(); render(); }
+      return;
+    }
+    if (t.id === 'start-date' && t.value) {
+      state.start = { v: t.value, t: Date.now() }; save(); render();
+      toast(`El plan empieza el ${longDate(fromIso(t.value)).toLowerCase()}`);
+    }
+  });
+
+  document.addEventListener('submit', async e => {
+    e.preventDefault();
+    const f = e.target;
+    if (f.id === 'adder') {
+      const dv = f.elements.day.value, slot = +f.elements.slot.value;
+      if (!dv) { $('#adder-hint').textContent = 'Primero elige un día.'; return; }
+      const [wk, day] = dv.split('|'), id = +f.dataset.id, w = editWeek(wk);
+      w.plan[day][slot] = id; delete w.done[doneKey(day, slot, false)];
+      save(); closeSheet(); render();
+      toast(`Agregado al ${dayName(day).toLowerCase()}, ${momentName(slot)}`);
+    } else if (f.id === 'diary-form') {
+      const text = $('#diary-text').value.trim(), date = $('#diary-date').value;
+      if (!text || !date) return;
+      state.diary[`e${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`] = { date, text, t: Date.now() };
+      save(); render(); toast('Logro guardado en su diario 📒');
+    } else if (f.id === 'join-form') {
+      const code = normCode($('#join-code').value), msg = $('#join-msg');
+      if (!/^AIUNI-[A-Z0-9]{4}-[A-Z0-9]{4}$/.test(code)) { msg.textContent = 'Revisa el código: tiene la forma AIUNI-XXXX-XXXX.'; return; }
+      msg.textContent = 'Buscando…';
+      try {
+        const res = await rpc('aiuni_juega_leer', { p_codigo: code });
+        if (!res) { msg.textContent = 'No encontramos ese código. Revisa que esté bien escrito.'; return; }
+        state.family = code; merge(res.datos); state.lastSync = Date.now(); persist();
+        if (localAhead(res.datos)) await rpc('aiuni_juega_guardar', { p_codigo: code, p_datos: shared() });
+        render(); refreshSheet(); toast('¡Listo! Ya comparten el plan 💞');
+      } catch (err) { msg.textContent = 'No se pudo conectar. Revisa tu internet e intenta otra vez.'; }
+    }
+  });
+
+  document.addEventListener('keydown', e => {
+    const sh = $('#sheet');
+    if (sh.hidden) return;
+    if (e.key === 'Escape') { closeSheet(); return; }
+    if (e.key === 'Tab') {
+      const f = [...sh.querySelectorAll('button, input, textarea, [href], [tabindex]:not([tabindex="-1"])')].filter(el => !el.closest('[hidden]'));
+      if (!f.length) return;
+      const first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+
+  window.addEventListener('hashchange', () => { closeSheet(); render(); window.scrollTo(0, 0); });
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) { render(); sync(); } });
+  window.addEventListener('online', sync);
+  setInterval(() => { if (!document.hidden) sync(); }, 60000);
+
+  $('#brand-name').textContent = `${BABY.name} Juega`;
+  render();
+  sync();
+})();
+
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => { navigator.serviceWorker.register('./sw.js').catch(() => {}); });
+}
+</script>
+</body>
+</html>
